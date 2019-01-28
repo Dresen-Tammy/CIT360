@@ -21,7 +21,8 @@ public class RunnableExample implements Runnable
     public void run() 
     {
         int value = ThreadsRunnablesExecutors.getMainCounter().increment();
-        System.out.println("Thread " + Thread.currentThread().getName() + " wants " + runnableNumber * 3 + " pizzas. Counter: " 
+        System.out.println("Thread " + Thread.currentThread().getName() + " wants " 
+                + runnableNumber * 3 + " pizzas. Counter: " 
                  + value);
         
     }
