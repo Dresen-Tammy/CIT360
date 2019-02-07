@@ -14,30 +14,36 @@ import java.util.Scanner;
  *
  * @author Dresen_HP
  */
-public class HandleInput implements Handler {
+public class GetInput {
 
-    public HandleInput() {
+    public GetInput() {
     }
 
-    @Override
-    public void handleShape(HashMap<String, Integer> data) {
+
+    public HashMap<String, Object> getInput() {
         BufferedReader systemIn = new BufferedReader(new InputStreamReader(System.in));
         String shape = "";
         int number = 0;
-        System.out.println("\nEnter a shape"
+        HashMap<String, Object> data = new HashMap();
+        System.out.println("\n\nEnter a shape"
                                 +"\nC - Circle"
                                 +"\nS - Square"
-                                +"\nT - Triangle");
-        while (!shape.equals("C") && !shape.equals("S") && !shape.equals("T")) {
+                                +"\nT - Triangle"
+                                +"\nX - Exit");
+        while (!shape.equals("C") && !shape.equals("S") && !shape.equals("T") && !shape.equals("X")) {
             
             try {
                 shape = systemIn.readLine();
                 shape = shape.trim().toUpperCase();
-                if (!shape.equals("C") && !shape.equals("S") && !shape.equals("T")) {
-                    System.out.println("Error. Please enter C, S. or T");
+                if (shape.equals("X")) {
+                    data.put("command", shape);
+                    return data;
                 }
+                if (!shape.equals("C") && !shape.equals("S") && !shape.equals("T")) {
+                    System.out.println("Error. Please enter C, S, T or X");
+                } 
             } catch (Exception e) {
-                System.out.println("Error. Please enter C, S, or T");
+                System.out.println("Error. Please enter C, S, T or X");
             }
         }
         System.out.println("Enter a number");
@@ -53,10 +59,9 @@ public class HandleInput implements Handler {
             }
                 
         }
-        HashMap<String, Integer> info = new HashMap<>();
-        info.put("length", number);
-        ShapeHandler shapeHandler = new ShapeHandler();
-        shapeHandler.handleShape(shape, info);
+        data.put("command", shape);
+        data.put("length", number);
+        return data;
 
     }
     

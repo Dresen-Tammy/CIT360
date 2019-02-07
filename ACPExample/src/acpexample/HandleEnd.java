@@ -17,8 +17,8 @@ public class HandleEnd implements Handler {
     }
 
     @Override
-    public void handleShape(HashMap<String, Integer> info) {
-        System.out.println("Goodbye");
+    public void handleShape(HashMap<String, Object> info) {
+        System.out.println("\nGoodbye");
     }
     
 }

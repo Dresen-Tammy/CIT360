@@ -11,6 +11,6 @@ import java.util.HashMap;
  * @author Dresen_HP
  */
 public interface Handler {
-    public void handleShape(HashMap<String, Integer> info);
+    public void handleShape(HashMap<String, Object> info);
     
 }

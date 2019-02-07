@@ -17,14 +17,14 @@ public class HandleTriangle implements Handler {
     }
 
     @Override
-    public void handleShape(HashMap<String, Integer> info) {
-        Integer perimeter = info.get("length") * 3;
+    public void handleShape(HashMap<String, Object> info) {
+        Integer perimeter = (Integer) info.get("length") * 3;
         System.out.println("\nA regular triangle with a side length of " 
                 + info.get("length") 
                 + "\nhas a perimeter of " + perimeter + "."
                 );
-        ShapeHandler shapeHandler = new ShapeHandler();
-        shapeHandler.handleShape("choice", info);
+
+        //shapeHandler.handleShape("choice", info);
     }
 
     
