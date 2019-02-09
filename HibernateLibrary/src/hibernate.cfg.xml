@@ -6,12 +6,12 @@
     <session-factory>
         <!-- Database connection settings -->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/library</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/library2</property>
         <property name="connection.username">takadre</property>
         <property name="connection.password">password</property>
 
         <!-- JDBC connection pool (use the built-in) -->
-        <property name="connection.pool_size">1</property>
+
 
         <!-- SQL dialect -->
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
@@ -27,5 +27,6 @@
 
         <!-- Mapping to classes -->
         <mapping class="dresen.hibernatelibrary.Book" />
+        <mapping class="dresen.hibernatelibrary.Author" />
     </session-factory>
 </hibernate-configuration>

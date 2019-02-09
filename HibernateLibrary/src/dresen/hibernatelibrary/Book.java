@@ -1,10 +1,13 @@
 package dresen.hibernatelibrary;
 
 import  javax.persistence.*;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="book")
-public class Book {
+public class Book implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,6 +20,10 @@ public class Book {
     @Column(name = "description")
     private String description;
 
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "author_id", referencedColumnName = "author_id")
+    private Author author;
+
     public Book() {
 
     }
@@ -24,6 +31,7 @@ public class Book {
     public Book(String title, String description) {
         this.title = title;
         this.description = description;
+
     }
 
     public int getId() {
@@ -50,12 +58,21 @@ public class Book {
         this.description = description;
     }
 
+    Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
+
                 '}';
     }
 }

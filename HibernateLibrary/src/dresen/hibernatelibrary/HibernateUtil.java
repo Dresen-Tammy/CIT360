@@ -18,12 +18,16 @@ import org.hibernate.service.ServiceRegistry;
             try {
                 // Create serviceRegistry from hibernate.cfg.xml
                 ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
-                        .configure("hibernate.cfg.xml").build();
+                        .configure("hibernate.cfg.xml")
+                        .build();
 
                 // create metadata source using the specified service registry.
                 Metadata metadata = new MetadataSources(serviceRegistry).getMetadataBuilder().build();
 
                 return metadata.getSessionFactoryBuilder().build();
+
+
+
             } catch (Throwable e) {
                 System.err.println("Initial SessionFactory creation failed. " + e);
                 throw new ExceptionInInitializerError(e);
