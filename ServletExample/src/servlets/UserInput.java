@@ -19,13 +19,14 @@ public class UserInput implements Serializable {
 
     }
 
-    public UserInput(String name, String animal, String day, int number, String food, String homework) {
+    public UserInput(String name, String animal, String day, int number, String food, String homework, LocalDate date) {
         this.name = name;
         this.animal = animal;
         this.day = day;
         this.number = number;
         this.food = food;
         this.homework = homework;
+        this.date = date;
     }
 
     public String getName() {

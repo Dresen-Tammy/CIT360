@@ -10,6 +10,7 @@
         <element id="directory" name="lib">
           <element id="file-copy" path="$USER_HOME$/Downloads/jackson-annotations-2.9.8.jar" />
           <element id="file-copy" path="$USER_HOME$/Downloads/jackson-databind-2.9.8.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/jstl-1.2.jar" />
         </element>
       </element>
     </root>
