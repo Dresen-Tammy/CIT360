@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02ae54de-3cb9-43f3-a153-7835520652d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../HibernateLibrary/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ACPExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ACPExample.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/.idea/libraries/Hibernate_5_4_1_5_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/src/dresen/hibernate1/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/src/dresen/hibernate1/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/src/dresen/hibernate1/DAOFiles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/src/dresen/hibernate1/HibernateUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/src/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HibernateLibrary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/HibernateLibrary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/HibernateLibrary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/out/production/HibernateLibrary/META-INF/HibernateLibrary.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/out/production/HibernateLibrary/dresen/hibernatelibrary/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/out/production/HibernateLibrary/dresen/hibernatelibrary/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/out/production/HibernateLibrary/dresen/hibernatelibrary/DAOFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/out/production/HibernateLibrary/dresen/hibernatelibrary/DAOFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/out/production/HibernateLibrary/dresen/hibernatelibrary/HibernateLibrary.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/out/production/HibernateLibrary/dresen/hibernatelibrary/HibernateLibrary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/out/production/HibernateLibrary/dresen/hibernatelibrary/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/out/production/HibernateLibrary/dresen/hibernatelibrary/HibernateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/out/production/HibernateLibrary/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/out/production/HibernateLibrary/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/src/dresen/hibernatelibrary/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/src/dresen/hibernatelibrary/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/src/dresen/hibernatelibrary/DAOFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/src/dresen/hibernatelibrary/DAOFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/src/dresen/hibernatelibrary/HibernateLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/src/dresen/hibernatelibrary/HibernateLibrary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/src/dresen/hibernatelibrary/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/src/dresen/hibernatelibrary/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/src/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVCExample2/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MVCExample2/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jacksonExample/target/classes/.netbeans_automatic_build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jacksonExample/target/test-classes/.netbeans_automatic_build" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/acpexample/ACPExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+            <state relative-caret-position="210">
+              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -120,10 +96,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549648470825" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549750585517" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -157,16 +136,15 @@
       <updated>1549571920547</updated>
       <workItem from="1549571922061" duration="2147000" />
       <workItem from="1549648183746" duration="307000" />
-      <workItem from="1549738489755" duration="661000" />
+      <workItem from="1549738489755" duration="1050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3115000" />
+    <option name="totallyTimeSpent" value="3504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1963" y="-850" width="1280" height="1002" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -188,7 +166,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -238,17 +216,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/acpexample/ACPExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+        <state relative-caret-position="210">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ACPExample</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

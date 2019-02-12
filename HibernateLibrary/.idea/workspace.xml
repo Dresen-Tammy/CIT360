@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75ef799a-3e73-4b95-a20d-f60c73964a26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ACPExample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ACPExample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/.idea/libraries/Hibernate_5_4_1_5_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/src/dresen/hibernate1/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/src/dresen/hibernate1/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/src/dresen/hibernate1/DAOFiles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/src/dresen/hibernate1/HibernateUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hibernate1/src/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HibernateLibrary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HibernateLibrary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HibernateLibrary/META-INF/HibernateLibrary.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HibernateLibrary/dresen/hibernatelibrary/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HibernateLibrary/dresen/hibernatelibrary/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HibernateLibrary/dresen/hibernatelibrary/DAOFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HibernateLibrary/dresen/hibernatelibrary/DAOFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HibernateLibrary/dresen/hibernatelibrary/HibernateLibrary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HibernateLibrary/dresen/hibernatelibrary/HibernateLibrary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HibernateLibrary/dresen/hibernatelibrary/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HibernateLibrary/dresen/hibernatelibrary/HibernateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HibernateLibrary/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HibernateLibrary/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dresen/hibernatelibrary/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dresen/hibernatelibrary/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dresen/hibernatelibrary/DAOFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dresen/hibernatelibrary/DAOFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dresen/hibernatelibrary/HibernateLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dresen/hibernatelibrary/HibernateLibrary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dresen/hibernatelibrary/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dresen/hibernatelibrary/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVCExample2/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MVCExample2/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jacksonExample/target/classes/.netbeans_automatic_build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jacksonExample/target/test-classes/.netbeans_automatic_build" beforeDir="false" />
-    </list>
+    <list default="true" id="75ef799a-3e73-4b95-a20d-f60c73964a26" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dresen/hibernatelibrary/HibernateLibrary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="870">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dresen/hibernatelibrary/DAOFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-551">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="352">
+              <caret line="164" selection-start-line="164" selection-end-line="164" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -236,8 +208,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1725" />
-    <option name="y" value="-791" />
+    <option name="x" value="2019" />
+    <option name="y" value="-741" />
     <option name="width" value="1588" />
     <option name="height" value="972" />
   </component>
@@ -285,7 +257,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549745640369" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549745819297" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -397,18 +369,18 @@
       <workItem from="1549651681104" duration="351000" />
       <workItem from="1549652045142" duration="242000" />
       <workItem from="1549663619414" duration="16412000" />
-      <workItem from="1549724001166" duration="8849000" />
+      <workItem from="1549724001166" duration="9622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44890000" />
+    <option name="totallyTimeSpent" value="45663000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1725" y="-791" width="1588" height="972" extended-state="0" />
+    <frame x="2019" y="-741" width="1588" height="972" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4993679" visible="true" weight="0.14100906" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993679" visible="true" weight="0.14100906" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.30763584" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" sideWeight="0.5006321" side_tool="true" weight="0.18659128" />
@@ -420,7 +392,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294412" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49757674" weight="0.39772728" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49676585" visible="true" weight="0.3034091" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49676585" weight="0.3034091" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -493,12 +465,6 @@
           <line>34</line>
           <properties />
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dresen/hibernatelibrary/HibernateLibrary.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/dresen/hibernatelibrary/HibernateLibrary.java</url>
@@ -610,8 +576,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dresen/hibernatelibrary/DAOFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="352">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -620,8 +586,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dresen/hibernatelibrary/HibernateLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="870">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
