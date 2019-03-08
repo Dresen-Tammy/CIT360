@@ -7,11 +7,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c85e6bc-ecb1-4c14-8b3f-3ae180df5352" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../JsonEchoService/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JsonEchoService/.idea/libraries/QcJson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JsonEchoService/.idea/libraries/src.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JsonEchoService/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/androidTest/java/com/dresent/madlibclient/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/java/com/dresent/madlibclient/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/test/java/com/dresent/madlibclient/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MadlibClient/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyServletProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyServletProject/src/Servlets/DoubleMeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SimpleHttpGetServlet/app/src/main/java/com/theopentutorials/android/HttpGetServletActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Store/src/store/control/ApplicationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Store/src/store/control/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Store/src/store/control/LoginHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Store/src/store/control/LogoutHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Store/src/store/control/RegistrationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Store/src/store/control/StoreServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Store/src/store/model/DAOFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Store/src/store/model/HibernateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Store/src/store/model/PhoneNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Store/src/store/model/StoreModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Store/src/store/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../httpgetservlet/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../httpgetservlet/src/com/theopentutorials/servlets/HelloWorldServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testAndroid/app/src/main/java/com/example/dresen_hp/testandroid/HttpGetServletActivity3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpConnect/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HttpConnect/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpConnect/HttpConnect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../HttpConnect/HttpConnect.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpConnect/out/production/HttpConnect/com/company/SendHTTPRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HttpConnect/out/production/HttpConnect/com/company/SendHTTPRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HttpConnect/src/com/company/SendHTTPRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HttpConnect/src/com/company/SendHTTPRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JacksonExample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JacksonExample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JunitTest/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JunitTest/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ServletExample_war_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServletExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ServletExample.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ServletExample_war_exploded/WEB-INF/classes/servlets/MadlibServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ServletExample_war_exploded/WEB-INF/classes/servlets/MadlibServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ServletExample_war_exploded/user_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ServletExample_war_exploded/user_input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ServletExample/servlets/MadlibServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ServletExample/servlets/MadlibServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlets/MadlibServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/MadlibServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/user_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/user_input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../System Level Test - Sheet1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jacksonExample/target/classes/com/dresen/jacksonexample/Dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jacksonExample/target/classes/com/dresen/jacksonexample/Dog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jacksonExample/target/classes/com/dresen/jacksonexample/JacksonExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jacksonExample/target/classes/com/dresen/jacksonexample/JacksonExample.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,181 +87,77 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.41897997">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/user_input.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="158">
-                  <caret line="37" selection-start-line="37" selection-end-line="37" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/servlets/MadlibServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="601">
-                  <caret line="66" selection-start-line="66" selection-end-line="66" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#2470#2471#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/awt/print/Book.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="67">
-                  <caret line="37" selection-start-line="37" selection-end-line="37" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/madlib.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="21" selection-start-line="19" selection-start-column="7" selection-end-line="28" selection-end-column="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/web/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/servlets/UserInput.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="538">
-                  <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#595#596#0" expanded="true" />
-                    <element signature="e#622#623#0" expanded="true" />
-                    <element signature="e#662#663#0" expanded="true" />
-                    <element signature="e#694#695#0" expanded="true" />
-                    <element signature="e#727#728#0" expanded="true" />
-                    <element signature="e#756#757#0" expanded="true" />
-                    <element signature="e#800#801#0" expanded="true" />
-                    <element signature="e#836#837#0" expanded="true" />
-                    <element signature="e#866#867#0" expanded="true" />
-                    <element signature="e#892#893#0" expanded="true" />
-                    <element signature="e#930#931#0" expanded="true" />
-                    <element signature="e#960#961#0" expanded="true" />
-                    <element signature="e#990#991#0" expanded="true" />
-                    <element signature="e#1019#1020#0" expanded="true" />
-                    <element signature="e#1060#1061#0" expanded="true" />
-                    <element signature="e#1096#1097#0" expanded="true" />
-                    <element signature="e#1127#1128#0" expanded="true" />
-                    <element signature="e#1154#1155#0" expanded="true" />
-                    <element signature="e#1194#1195#0" expanded="true" />
-                    <element signature="e#1226#1227#0" expanded="true" />
-                    <element signature="e#1261#1262#0" expanded="true" />
-                    <element signature="e#1292#1293#0" expanded="true" />
-                    <element signature="e#1340#1341#0" expanded="true" />
-                    <element signature="e#1380#1381#0" expanded="true" />
-                    <element signature="e#1628#1629#0" expanded="true" />
-                    <element signature="e#1655#1656#0" expanded="true" />
-                    <element signature="e#1693#1694#0" expanded="true" />
-                    <element signature="e#1725#1726#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/user_input.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/servlets/MadlibServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="173">
-                  <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#2416#2417#0" expanded="true" />
-                    <element signature="e#2470#2471#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/web/madlib.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-                  <folding>
-                    <element signature="e#813#817#0#HTML" expanded="true" />
-                    <element signature="e#823#827#0#HTML" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/servlets/UserInput.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#846#847#0" expanded="true" />
-                    <element signature="e#873#874#0" expanded="true" />
-                    <element signature="e#913#914#0" expanded="true" />
-                    <element signature="e#945#946#0" expanded="true" />
-                    <element signature="e#978#979#0" expanded="true" />
-                    <element signature="e#1007#1008#0" expanded="true" />
-                    <element signature="e#1051#1052#0" expanded="true" />
-                    <element signature="e#1087#1088#0" expanded="true" />
-                    <element signature="e#1117#1118#0" expanded="true" />
-                    <element signature="e#1143#1144#0" expanded="true" />
-                    <element signature="e#1181#1182#0" expanded="true" />
-                    <element signature="e#1211#1212#0" expanded="true" />
-                    <element signature="e#1241#1242#0" expanded="true" />
-                    <element signature="e#1270#1271#0" expanded="true" />
-                    <element signature="e#1311#1312#0" expanded="true" />
-                    <element signature="e#1347#1348#0" expanded="true" />
-                    <element signature="e#1378#1379#0" expanded="true" />
-                    <element signature="e#1405#1406#0" expanded="true" />
-                    <element signature="e#1445#1446#0" expanded="true" />
-                    <element signature="e#1477#1478#0" expanded="true" />
-                    <element signature="e#1512#1513#0" expanded="true" />
-                    <element signature="e#1543#1544#0" expanded="true" />
-                    <element signature="e#1591#1592#0" expanded="true" />
-                    <element signature="e#1631#1632#0" expanded="true" />
-                    <element signature="e#1666#1667#0" expanded="true" />
-                    <element signature="e#1693#1694#0" expanded="true" />
-                    <element signature="e#1736#1737#0" expanded="true" />
-                    <element signature="e#1768#1769#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/user_input.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="703">
+              <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/servlets/MadlibServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/artifacts/ServletExample_war_exploded.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/awt/print/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/madlib.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" selection-start-line="19" selection-start-column="7" selection-end-line="28" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlets/UserInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1026">
+              <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -204,6 +166,7 @@
         <option value="Jsp File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -214,11 +177,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/web/main.css" />
-        <option value="$PROJECT_DIR$/web/user_input.html" />
         <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/src/servlets/UserInput.java" />
-        <option value="$PROJECT_DIR$/src/servlets/MadlibServlet.java" />
         <option value="$PROJECT_DIR$/web/madlib.jsp" />
+        <option value="$PROJECT_DIR$/web/user_input.html" />
+        <option value="$PROJECT_DIR$/src/servlets/MadlibServletTest.java" />
+        <option value="$PROJECT_DIR$/src/MadlibServletTest.java" />
+        <option value="$PROJECT_DIR$/src/test/MadlibServletTest.java" />
+        <option value="$PROJECT_DIR$/.idea/artifacts/ServletExample.xml" />
+        <option value="$PROJECT_DIR$/.idea/artifacts/ServletExample_war_exploded.xml" />
+        <option value="$PROJECT_DIR$/src/servlets/MadlibServlet.java" />
       </list>
     </option>
   </component>
@@ -230,24 +198,39 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2235" />
-    <option name="y" value="-1098" />
-    <option name="width" value="1549" />
-    <option name="height" value="1322" />
+    <option name="x" value="84" />
+    <option name="y" value="-989" />
+    <option name="width" value="1038" />
+    <option name="height" value="773" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ServletExample" type="b2602c69:ProjectViewProjectNode" />
               <item name="ServletExample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ServletExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServletExample" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ServletExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ServletExample" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ServletExample" type="b2602c69:ProjectViewProjectNode" />
@@ -267,20 +250,16 @@
             </path>
             <path>
               <item name="ServletExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ServletExample" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="ServletExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,14 +270,29 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550008532225" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551487451278" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last.edited.regexp" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="servlets" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -323,6 +317,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_37_ServletExample" />
+        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -396,50 +391,57 @@
       <option name="presentableId" value="Default" />
       <updated>1549916192455</updated>
       <workItem from="1549916198974" duration="34434000" />
+      <workItem from="1550043907519" duration="1006000" />
+      <workItem from="1550363692033" duration="3728000" />
+      <workItem from="1551402316517" duration="2871000" />
+      <workItem from="1551412720390" duration="513000" />
+      <workItem from="1551424788699" duration="5429000" />
+      <workItem from="1551543553294" duration="1935000" />
+      <workItem from="1551986940677" duration="2178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34434000" />
+    <option name="totallyTimeSpent" value="52094000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2235" y="-1098" width="1549" height="1322" extended-state="0" />
+    <frame x="84" y="-989" width="1038" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Learn" />
-      <window_info id="Web" sideWeight="0.50060606" side_tool="true" weight="0.19376244" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49939394" visible="true" weight="0.24153948" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49939394" visible="true" weight="0.21987952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Application Servers" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32933652" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.18211383" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
+      <window_info id="Web" order="8" sideWeight="0.50060606" side_tool="true" weight="0.19376244" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35447153" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35389134" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.399187" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.32933652" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.18211383" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -482,13 +484,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/servlets/Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/Servlet.java" />
     <entry file="file://$PROJECT_DIR$/web/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="553">
@@ -496,80 +492,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/awt/print/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/UserInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#1154#1155#0" expanded="true" />
-            <element signature="e#1194#1195#0" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-            <element signature="e#1261#1262#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1340#1341#0" expanded="true" />
-            <element signature="e#1380#1381#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
-            <element signature="e#1655#1656#0" expanded="true" />
-            <element signature="e#1693#1694#0" expanded="true" />
-            <element signature="e#1725#1726#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/MadlibServletTest.java" />
     <entry file="file://$PROJECT_DIR$/web/user_input.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="703">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/MadlibServlet.java">
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/ServletExample_war_exploded.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2470#2471#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="57">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/awt/print/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/madlib.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="399">
           <caret line="21" selection-start-line="19" selection-start-column="7" selection-end-line="28" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="209">
           <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/UserInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/MadlibServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

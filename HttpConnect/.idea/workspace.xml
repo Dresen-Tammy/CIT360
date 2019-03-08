@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1b59e7a-907a-4465-9b61-5c9eb6197b7d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MyServletProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyServletProject/src/Servlets/DoubleMeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SimpleHttpGetServlet/app/src/main/java/com/theopentutorials/android/HttpGetServletActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../httpgetservlet/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../httpgetservlet/src/com/theopentutorials/servlets/HelloWorldServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testAndroid/app/src/main/java/com/example/dresen_hp/testandroid/HttpGetServletActivity3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpConnect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HttpConnect.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HttpConnect/com/company/SendHTTPRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HttpConnect/com/company/SendHTTPRequest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/SendHTTPRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/SendHTTPRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JunitTest/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JunitTest/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletExample/.idea/artifacts/ServletExample_war_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServletExample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletExample/ServletExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/ServletExample.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletExample/out/artifacts/ServletExample_war_exploded/WEB-INF/classes/servlets/MadlibServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/out/artifacts/ServletExample_war_exploded/WEB-INF/classes/servlets/MadlibServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletExample/out/artifacts/ServletExample_war_exploded/user_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/out/artifacts/ServletExample_war_exploded/user_input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletExample/out/production/ServletExample/servlets/MadlibServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/out/production/ServletExample/servlets/MadlibServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletExample/src/servlets/MadlibServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/src/servlets/MadlibServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletExample/web/user_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/web/user_input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../System Level Test - Sheet1.pdf" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +35,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/SendHTTPRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+            <state relative-caret-position="183">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Rebeccas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,6 +92,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>new in</find>
+      <find>response</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -73,6 +107,8 @@
         <option value="$PROJECT_DIR$/src/com/company/HttpConnect.java" />
         <option value="$PROJECT_DIR$/src/com/company/Recipe.java" />
         <option value="$PROJECT_DIR$/src/com/company/Response.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Andreas.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Rebeccas.java" />
         <option value="$PROJECT_DIR$/src/com/company/SendHTTPRequest.java" />
       </list>
     </option>
@@ -83,11 +119,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="130" />
-    <option name="y" value="23" />
-    <option name="width" value="1150" />
-    <option name="height" value="777" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2219" />
+    <option name="y" value="-324" />
+    <option name="width" value="806" />
+    <option name="height" value="605" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -98,6 +134,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,15 +162,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550022856818" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550506614819" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -148,7 +184,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SendHTTPRequest">
+  <component name="RunManager" selected="Application.Rebeccas">
+    <configuration name="Andreas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Andreas" />
+      <module name="HttpConnect" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.HttpConnect" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.HttpConnect" />
       <module name="HttpConnect" />
@@ -159,8 +208,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SendHTTPRequest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.SendHTTPRequest" />
+    <configuration name="Rebeccas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Rebeccas" />
       <module name="HttpConnect" />
       <extension name="coverage">
         <pattern>
@@ -172,14 +221,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SendHTTPRequest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.SendHTTPRequest" />
+      <module name="HttpConnect" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.HttpConnect" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.SendHTTPRequest" />
+      <item itemvalue="Application.Andreas" />
+      <item itemvalue="Application.Rebeccas" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SendHTTPRequest" />
+        <item itemvalue="Application.Rebeccas" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SendHTTPRequest" />
+        <item itemvalue="Application.Andreas" />
       </list>
     </recent_temporary>
   </component>
@@ -195,18 +261,22 @@
       <updated>1550008640226</updated>
       <workItem from="1550008644026" duration="5737000" />
       <workItem from="1550015841565" duration="6713000" />
-      <workItem from="1550043604824" duration="4397000" />
+      <workItem from="1550043604824" duration="4607000" />
+      <workItem from="1550173929318" duration="2812000" />
+      <workItem from="1550257022070" duration="6792000" />
+      <workItem from="1551402613593" duration="595000" />
+      <workItem from="1551458553657" duration="2154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16847000" />
+    <option name="totallyTimeSpent" value="29410000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <frame x="2219" y="-324" width="806" height="605" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14054927" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20811519" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -214,20 +284,20 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.3318649" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.51688695" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3996697" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.16152717" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39941263" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.328654" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.19236417" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3318649" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -247,25 +317,54 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/SendHTTPRequest.java</url>
-          <line>55</line>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/SendHTTPRequest.java</url>
-          <line>46</line>
+          <line>47</line>
           <properties />
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Rebeccas.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/SendHTTPRequest.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Rebeccas.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/HttpConnect.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/Andreas.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/SendHTTPRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        <state relative-caret-position="183">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Rebeccas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

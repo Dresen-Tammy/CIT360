@@ -35,13 +35,14 @@ public class SendHTTPRequest {
         int responseCode = 0;
         try {
             // Happy/Nasty Path. Uncomment different line to show error
-            String url = "https://www.food2fork.com/api/search?key=ca9b3bf940c9d4bc3928057e439d6564" + "&q=" + searchQuery;
+            //String url = "https://www.food2fork.com/api/search?key=ca9b3bf940c9d4bc3928057e439d6564" + "&q=" + searchQuery;
             //String url = "https://www.food2fork.com/api/search?key=ca9b3bf940c9d4bc3928057e439d6564XX" + "&q=" + searchQuery;
-            //String url = "https://www.food2for.com/api/search?key=ca9b3bf940c9d4bc3928057e439d6564" + "&q=" + searchQuery;
+            String url = "https://www.food2foo.com/api/search?key=ca9b3bf940c9d4bc3928057e439d6564" + "&q=" + searchQuery;
 
 
             // create new URL object
             URL obj = new URL(url);
+
 
             // Obtain a URLConnection object from the URL
             HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -85,6 +86,7 @@ public class SendHTTPRequest {
             }
             con.disconnect();
         } catch (Exception e) {
+
             System.out.println("Error getting recipes.\nResponseCode: " + responseCode);
             System.out.println(e);
 

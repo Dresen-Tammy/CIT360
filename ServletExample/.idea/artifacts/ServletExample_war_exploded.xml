@@ -11,6 +11,8 @@
           <element id="file-copy" path="$USER_HOME$/Downloads/jackson-annotations-2.9.8.jar" />
           <element id="file-copy" path="$USER_HOME$/Downloads/jackson-databind-2.9.8.jar" />
           <element id="file-copy" path="$USER_HOME$/Downloads/jstl-1.2.jar" />
+          <element id="library" level="module" name="JUnit5.3" module-name="ServletExample" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/hamcrest-junit-2.0.0.0.jar" />
         </element>
       </element>
     </root>

@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.time.LocalDate.*;
 
@@ -22,8 +23,10 @@ public class MadlibServlet extends HttpServlet {
 
 
     }
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        PrintWriter out = response.getWriter();
+        out.println("It worked!");
+    /*protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String name = request.getParameter("name");
         String animal = request.getParameter("animal");
@@ -60,7 +63,7 @@ public class MadlibServlet extends HttpServlet {
     }
 
     public static boolean isANumber(String str) {
-        return str.matches("-?\\d+(\\.\\d+)?");
+        return str.matches("-?\\d+(\\.\\d+)?");*/
     }
 
 }
