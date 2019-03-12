@@ -1,5 +1,7 @@
 package library.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -21,6 +23,7 @@ public class Genre {
     /*
     * One genre can have many books.
      */
+    @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "genre", fetch = FetchType.EAGER)
     private Set<Book> books;
 
@@ -54,7 +57,6 @@ public class Genre {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", books=" + books +
                 '}';
     }
 }

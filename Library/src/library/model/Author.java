@@ -1,5 +1,7 @@
 package library.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -22,6 +24,7 @@ public class Author {
     * one author can have many books. CascadeType.ALL causes associated
     * books to be deleted when an Author is deleted.
      */
+    @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "author", fetch = FetchType.EAGER)
     private Set<Book> books;
 
@@ -63,7 +66,6 @@ public class Author {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", books=" + books +
                 '}';
     }
 }

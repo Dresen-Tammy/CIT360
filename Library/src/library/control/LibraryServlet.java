@@ -1,5 +1,7 @@
 package library.control;
 
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import library.model.LibraryDAO;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
+import com.fasterxml.jackson.datatype.joda.*;
 
 @WebServlet(name = "LibraryServlet", urlPatterns = {"/LibraryServlet"})
 public class LibraryServlet extends HttpServlet {
@@ -28,18 +31,28 @@ public class LibraryServlet extends HttpServlet {
         theAppController.mapCommand("genres", new GenresHandler());
         theAppController.mapCommand("books", new BooksHandler());
         theAppController.mapCommand("bookAuthor", new BookAuthorHandler());
-        theAppController.mapCommand("bookGenre", new BookGenre());
+        theAppController.mapCommand("bookGenre", new BookGenreHandler());
+        theAppController.mapCommand("book", new AddBookHandler());
+        theAppController.mapCommand("review", new AddReviewHandler());
+        theAppController.mapCommand("editReview", new EditReviewHandler());
+        theAppController.mapCommand("delete", new DeleteReviewHandler());
+        theAppController.mapCommand("userReviews", new UserReviewsHandler());
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             // Jackson object mapper to easily turn request Json into HashMap
+            libraryModel = LibraryDAO.getInstance();
             mapper = new ObjectMapper();
+            mapper.registerModule(new JavaTimeModule());
+            mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
+
+
             // get inputStream from request and use mapper to turn into HashMap
             HashMap<String, Object> dataMap = mapper.readValue(request.getInputStream(), HashMap.class);
             PrintWriter out = response.getWriter();
             dataMap.put("toClient", out);
             dataMap.put("mapper", mapper);
-            //dataMap.put("model", this.libraryModel);
+            dataMap.put("model", this.libraryModel);
             String aCommand = (String) dataMap.get("command");
             theAppController.handleRequest(aCommand, dataMap);
         } catch (Exception e) {
@@ -56,6 +69,8 @@ public class LibraryServlet extends HttpServlet {
         String command = request.getParameter("command");
         String uname = request.getParameter("uname");
         String pword = request.getParameter("pword");
+        String word = request.getParameter("word");
+        String search = request.getParameter("search");
         String id = request.getParameter("id");
         HashMap<String, Object> dataMap = new HashMap<>();
         dataMap.put("uname", uname);

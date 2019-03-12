@@ -1,5 +1,7 @@
 package library.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 
@@ -25,6 +27,7 @@ public class Review {
     /*
     * Each review has one user, but User can have many reviews.
      */
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
@@ -32,6 +35,7 @@ public class Review {
     /*
     * Each Review has one book, but Book can have many reviews.
      */
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "book_id", referencedColumnName = "id")
     private Book book;

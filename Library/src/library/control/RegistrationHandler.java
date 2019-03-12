@@ -13,7 +13,7 @@ import java.util.UUID;
 
 public class RegistrationHandler implements Handler {
     @Override
-    public void handleIt(HashMap<String, Object> dataMap) {
+    public void handleIt(HashMap<String, Object> dataMap) throws IOException {
         // get username and password from dataMap input from user
         User foundUser;
         String sessionID = "";
@@ -45,7 +45,7 @@ public class RegistrationHandler implements Handler {
             aUser.setPword(password);
             // add new user to the model
             try {
-                theModel.addUser(aUser);
+                theModel.addObject(aUser);
             } catch (Exception e) {
                 e.printStackTrace();
                 }
@@ -57,15 +57,10 @@ public class RegistrationHandler implements Handler {
         responseMap.put("id", sessionUUID);
         // create object mapper
         ObjectMapper mapper = (ObjectMapper) dataMap.get("mapper");
-        try {
             // turn responseMap to JsonString and put it in dataMap to send back to client.
 
             PrintWriter out = (PrintWriter) dataMap.get("toClient");
             mapper.writeValue(out, responseMap);
 
-        } catch (
-                IOException e) {
-            e.printStackTrace();
-        }
     }
 }

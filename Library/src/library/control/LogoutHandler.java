@@ -14,27 +14,19 @@ import java.util.HashMap;
 public class LogoutHandler implements Handler {
 
     @Override
-    public void handleIt(HashMap<String, Object> dataMap) {
-        String sessionID = (String)dataMap.get("id");
-        LibraryDAO theModel = (LibraryDAO) dataMap.get("model");
+    public void handleIt(HashMap<String, Object> data) throws IOException {
+        String sessionID = (String)data.get("id");
+        LibraryDAO theModel = (LibraryDAO) data.get("model");
         User foundUser = theModel.getUserBySessionID(sessionID);
+        HashMap<String,Object> responseMap = new HashMap<>();
         if(foundUser != null) {
             foundUser.setSession("");
             theModel.updateUser(foundUser);
         }
-        HashMap<String,Object> responseMap = new HashMap<>();
-        responseMap.put("id", "");
-        ObjectMapper mapper = (ObjectMapper)dataMap.get("mapper");
-        PrintWriter out = (PrintWriter) dataMap.get("toClient");
-        try {
-            mapper.writeValue(out, responseMap);
-        } catch (JsonGenerationException e) {
-            e.printStackTrace();
-        } catch (JsonMappingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
+        responseMap.put("id", "");
+        ObjectMapper mapper = (ObjectMapper)data.get("mapper");
+        PrintWriter out = (PrintWriter) data.get("toClient");
+            mapper.writeValue(out, responseMap);
     }
 }

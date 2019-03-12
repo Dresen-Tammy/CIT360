@@ -34,17 +34,16 @@ public class LibraryDAO {
 
 
     /*
-    * Query User table
+    * Create
      */
-
-    // add User. Used for registering
-    public void addUser(User aUser) {
+    // add object. This works for User, Book and Review
+    public void addObject(Object anObject) {
         session = factory.openSession();
         Transaction tx = null;
 
         try {
             tx = session.beginTransaction();
-            session.save(aUser);
+            session.save(anObject);
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) {tx.rollback();}
@@ -53,6 +52,8 @@ public class LibraryDAO {
             session.close();
         }
     }
+
+
 
     // update user. Used for setting new sessionId logging in new session
     public void updateUser(User aUser) {
@@ -114,18 +115,9 @@ public class LibraryDAO {
     }
     }
 
-    /*
 
-    // get all users by their level.  Not implemented.
-    public ArrayList getAllUsers() { return this.getAll("");}
-    public ArrayList getAllCustomers() {return this.getAll("");}
-    public ArrayList getAllManagers() {return this.getAll("");}
-    public ArrayList getAllManagersByLevel() {return this.getAll("");}
-    */
 
-    /*
-    * Query Author table
-     */
+
 
     public ArrayList getAll(String sql) {
         session = factory.openSession();
@@ -144,6 +136,10 @@ public class LibraryDAO {
             session.close();
         }
     }
+
+    /*
+     * Query Author table
+     */
 
     // getAllAuthors. Uses getAll to query database.
     public ArrayList getAllAuthors() {
@@ -173,22 +169,7 @@ public class LibraryDAO {
         return list;
     }
 
-    // add new book.
-    public void addBook(Book aBook) {
-        session = factory.openSession();
-        Transaction tx = null;
 
-        try {
-            tx = session.beginTransaction();
-            session.save(aBook);
-            tx.commit();
-        } catch (HibernateException e) {
-            if (tx != null) { tx.rollback();}
-            e.printStackTrace();
-        } finally {
-            session.close();
-        }
-    }
 
     // get books by author
     public ArrayList getBooksByAuthor(Integer id) {
@@ -247,4 +228,18 @@ public class LibraryDAO {
             session.close();
         }
     }
+
+    /*
+    * Query review table
+     */
+
+    /*public ArrayList getReviewsByUser(Integer user_id) {
+        String sql = "from library.model.Review order by date_added where user_id = (:user_id)";
+        session = factory.openSession();
+        Transaction tx = null;
+        try {
+            Query query = session.createQuery()
+        }
+
+    }*/
 }

@@ -2,6 +2,7 @@ package library.model;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.Date;
 import java.util.Set;
 
 @Entity
@@ -20,7 +21,7 @@ public class Book {
     private String description;
 
     @Column(name = "date_added")
-    private Instant date_added;
+    private Date date_added;
 
     /*
     * A book has one author, but an author can have many books.
@@ -71,11 +72,11 @@ public class Book {
         this.description = description;
     }
 
-    public Instant getDate_added() {
+    public Date getDate_added() {
         return date_added;
     }
 
-    public void setDate_added(Instant date_added) {
+    public void setDate_added(Date date_added) {
         this.date_added = date_added;
     }
 
