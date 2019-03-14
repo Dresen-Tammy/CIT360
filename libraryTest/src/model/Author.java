@@ -1,31 +1,22 @@
-package main.model;
+package model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import javax.persistence.*;
 import java.util.Set;
 
-@Entity
-@Table(name = "author")
+
 public class Author {
 
-    @Id
-    @GeneratedValue
-    @Column(name = "id")
     private Integer id;
 
-    @Column(name = "firstName")
     private String firstName;
 
-    @Column(name = "lastName")
     private String lastName;
 
     /*
-    * one author can have many books. CascadeType.ALL causes associated
-    * books to be deleted when an Author is deleted.
+     * one author can have many books. CascadeType.ALL causes associated
+     * books to be deleted when an Author is deleted.
      */
-    @JsonIgnore
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "author", fetch = FetchType.EAGER)
+
     private Set<Book> books;
 
     public Integer getId() {
@@ -66,6 +57,7 @@ public class Author {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", books=" + books +
                 '}';
     }
 }

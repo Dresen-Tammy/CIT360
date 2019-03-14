@@ -1,33 +1,17 @@
-package main.model;
+package model;
 
 import java.util.Set;
-import javax.persistence.*;
 
-@Entity
-@Table(name = "user")
 public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
     private Integer id;
-    @Column(name = "uname")
     private String uname;
-    @Column(name = "pword")
     private String pword;
-    @Column(name = "active")
     private int active;
-    @Column(name = "manager_level")
     private int manager_level;
-    @Column(name = "session")
     private String session;
 
-    /*
-    * One user can have many reviews.  CascadeType.All causes associated
-    * reviews to be deleted when a user is deleted.
-     */
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user", fetch = FetchType.EAGER)
     private Set<Review> reviews;
 
 

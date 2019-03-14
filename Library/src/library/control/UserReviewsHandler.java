@@ -1,4 +1,4 @@
-package library.control;
+package main.control;
 
 import java.io.IOException;
 import java.util.HashMap;

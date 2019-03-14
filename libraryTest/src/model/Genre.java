@@ -1,30 +1,15 @@
-package main.model;
+package model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import javax.persistence.*;
 import java.util.Set;
 
-@Entity
-@Table(name = "genre")
 public class Genre {
 
-    @Id
-    @GeneratedValue
-    @Column(name = "id")
     private Integer id;
 
-    @Column(name = "name")
     private String name;
 
-    @Column(name = "description")
     private String description;
 
-    /*
-    * One genre can have many books.
-     */
-    @JsonIgnore
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "genre", fetch = FetchType.EAGER)
     private Set<Book> books;
 
     public Integer getId() {
@@ -57,6 +42,7 @@ public class Genre {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
+                ", books=" + books +
                 '}';
     }
 }

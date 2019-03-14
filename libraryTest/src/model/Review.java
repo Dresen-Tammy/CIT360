@@ -1,43 +1,18 @@
-package main.model;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import javax.persistence.*;
-
+package model;
 
 import java.util.Date;
 
-@Entity
-@Table(name = "review")
 public class Review {
 
-    @Id
-    @GeneratedValue
-    @Column(name = "id")
     private Integer id;
 
-    @Column(name = "stars")
     private Integer stars;
 
-    @Column(name = "review")
     private String review;
 
-    @Column(name = "date_added")
     private Date date_added;
-    /*
-    * Each review has one user, but User can have many reviews.
-     */
-    @JsonIgnore
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
 
-    /*
-    * Each Review has one book, but Book can have many reviews.
-     */
-    @JsonIgnore
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "book_id", referencedColumnName = "id")
     private Book book;
 
     public Integer getId() { return id;}
