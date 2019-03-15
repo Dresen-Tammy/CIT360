@@ -1,8 +1,10 @@
-package main.control;
+package library.control;
 
 import library.model.LibraryDAO;
 //import library.model.StoreModel;
 import library.model.User;
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
@@ -12,7 +14,7 @@ import java.util.HashMap;
 public class LogoutHandler implements Handler {
 
     @Override
-    public void handleIt(HashMap<String, Object> data) throws IOException {
+    public void runHandler(HashMap<String, Object> data) throws IOException {
         String sessionID = (String)data.get("id");
         LibraryDAO theModel = (LibraryDAO) data.get("model");
         User foundUser = theModel.getUserBySessionID(sessionID);
@@ -22,7 +24,8 @@ public class LogoutHandler implements Handler {
             theModel.updateUser(foundUser);
         }
 
-        responseMap.put("id", "");
+        responseMap.put("info", "id");
+        responseMap.put("response", "");
         ObjectMapper mapper = (ObjectMapper)data.get("mapper");
         PrintWriter out = (PrintWriter) data.get("toClient");
             mapper.writeValue(out, responseMap);

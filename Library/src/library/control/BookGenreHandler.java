@@ -13,7 +13,7 @@ import java.util.HashMap;
 
 public class BookGenreHandler implements Handler {
     @Override
-    public void handleIt(HashMap<String, Object> data) throws IOException {
+    public void runHandler(HashMap<String, Object> data) throws IOException {
         // get model
         LibraryDAO model = (LibraryDAO)data.get("model");
         // create responseMap
@@ -23,7 +23,8 @@ public class BookGenreHandler implements Handler {
         // query database for book
         ArrayList<Book> books = model.getBooksByGenre(genre_id);
         // put book into response map
-        responseMap.put("books", books);
+        responseMap.put("info", "books");
+        responseMap.put("response", books);
         // get PrintWriter out file
         PrintWriter out = (PrintWriter) data.get("toClient");
         // get mapper

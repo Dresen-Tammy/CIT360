@@ -1,4 +1,4 @@
-package main.model;
+package library.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

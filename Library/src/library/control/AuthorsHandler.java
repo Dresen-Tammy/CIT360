@@ -12,13 +12,14 @@ import java.util.HashMap;
 
 public class AuthorsHandler implements Handler {
     @Override
-    public void handleIt(HashMap<String, Object> dataMap) throws IOException {
+    public void runHandler(HashMap<String, Object> dataMap) throws IOException {
         // get info out of dataMap
         LibraryDAO theModel = (LibraryDAO) dataMap.get("model");
         // create responseMap for response
         HashMap<String, Object> responseMap = new HashMap<>();
         ArrayList authors = theModel.getAllAuthors();
-        responseMap.put("authors", authors);
+        responseMap.put("response", authors);
+        responseMap.put("info", "authors");
         ObjectMapper mapper = (ObjectMapper) dataMap.get("mapper");
         PrintWriter out = (PrintWriter) dataMap.get("toClient");
             mapper.writeValue(out, responseMap);

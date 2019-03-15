@@ -1,7 +1,9 @@
-package main.control;
+package library.control;
 
 import library.model.LibraryDAO;
 import library.model.User;
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
@@ -11,7 +13,7 @@ import java.util.UUID;
 
 public class RegistrationHandler implements Handler {
     @Override
-    public void handleIt(HashMap<String, Object> dataMap) throws IOException {
+    public void runHandler(HashMap<String, Object> dataMap) throws IOException {
         // get username and password from dataMap input from user
         User foundUser;
         String sessionID = "";
@@ -48,11 +50,13 @@ public class RegistrationHandler implements Handler {
                 e.printStackTrace();
                 }
             // and put the new session Id in the response
-            responseMap.put("id", sessionUUID.toString());
+            responseMap.put("info", "user");
+            responseMap.put("response", aUser);
         }
 
         // if user was found, then put empty sessionId to let user know username not available for registration
-        responseMap.put("id", sessionUUID);
+        responseMap.put("info", "error");
+        responseMap.put("response", "Error creating user");
         // create object mapper
         ObjectMapper mapper = (ObjectMapper) dataMap.get("mapper");
             // turn responseMap to JsonString and put it in dataMap to send back to client.

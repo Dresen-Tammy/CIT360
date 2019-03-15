@@ -1,4 +1,4 @@
-package main.model;
+package library.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -27,6 +27,14 @@ public class Author {
     @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "author", fetch = FetchType.EAGER)
     private Set<Book> books;
+
+    public Author() {
+    }
+
+    public Author(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     public Integer getId() {
         return id;

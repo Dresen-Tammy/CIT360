@@ -1,4 +1,4 @@
-package main.model;
+package library.model;
 
 import java.util.Set;
 import javax.persistence.*;
@@ -15,10 +15,6 @@ public class User {
     private String uname;
     @Column(name = "pword")
     private String pword;
-    @Column(name = "active")
-    private int active;
-    @Column(name = "manager_level")
-    private int manager_level;
     @Column(name = "session")
     private String session;
 
@@ -32,8 +28,12 @@ public class User {
 
 
     public User() {
-        this.active = 1;
-        this.manager_level = 0;
+        this.session = "";
+    }
+
+    public User(String uname, String pword) {
+        this.uname = uname;
+        this.pword = pword;
         this.session = "";
     }
 
@@ -43,8 +43,6 @@ public class User {
                 "id=" + id +
                 ", uname='" + uname + '\'' +
                 ", pword='" + pword + '\'' +
-                ", active=" + active +
-                ", manager_level=" + manager_level +
                 ", session='" + session + '\'' +
                 '}';
     }
@@ -67,30 +65,12 @@ public class User {
     public void setPword(String pword) {
         this.pword = pword;
     }
-
-
-    public int getManager_level() {
-        return manager_level;
-    }
-
-    public void setManager_level(int manager_level) {
-        this.manager_level = manager_level;
-    }
-
     public String getSession() {
         return session;
     }
 
     public void setSession(String session) {
         this.session = session;
-    }
-
-    public void setActive(int anIndicator){
-        this.active = anIndicator;
-    }
-
-    public int getActive(){
-        return this.active;
     }
 
     public Set<Review> getReviews() {

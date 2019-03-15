@@ -1,5 +1,7 @@
-package main.control;
+package library.control;
 
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import library.model.LibraryDAO;
 
@@ -10,13 +12,14 @@ import java.util.HashMap;
 
 public class GenresHandler implements Handler {
     @Override
-    public void handleIt(HashMap<String, Object> data) throws IOException {
+    public void runHandler(HashMap<String, Object> data) throws IOException {
 // get info out of dataMap
         LibraryDAO theModel = (LibraryDAO) data.get("model");
         // create responseMap for response
         HashMap<String, Object> responseMap = new HashMap<>();
         ArrayList genres = theModel.getAllGenres();
-        responseMap.put("genres", genres);
+        responseMap.put("info", "genres");
+        responseMap.put("response", genres);
         ObjectMapper mapper = (ObjectMapper) data.get("mapper");
         PrintWriter out = (PrintWriter) data.get("toClient");
         mapper.writeValue(out, responseMap);

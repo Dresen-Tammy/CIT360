@@ -13,7 +13,7 @@ import java.util.UUID;
 
 public class LoginHandler implements Handler {
     @Override
-    public void handleIt(HashMap<String, Object> dataMap) throws IOException {
+    public void runHandler(HashMap<String, Object> dataMap) throws IOException {
         String userName = (String) dataMap.get("uname");
         String password = (String) dataMap.get("pword");
         LibraryDAO model = (LibraryDAO) dataMap.get("model");
@@ -26,9 +26,10 @@ public class LoginHandler implements Handler {
             sessionId = sessionUUID.toString();
             foundUser.setSession(sessionId);
             model.updateUser(foundUser);
-            responseMap.put("id", sessionId);
+            responseMap.put("info", sessionId);
         }
-        responseMap.put("id", sessionId);
+        responseMap.put("response", sessionId);
+        responseMap.put("info","id");
         ObjectMapper mapper = (ObjectMapper) dataMap.get("mapper");
         PrintWriter out = (PrintWriter) dataMap.get("toClient");
         mapper.writeValue(out, responseMap);

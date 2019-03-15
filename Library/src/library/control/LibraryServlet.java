@@ -14,29 +14,28 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
-import com.fasterxml.jackson.datatype.joda.*;
 
 @WebServlet(name = "LibraryServlet", urlPatterns = {"/LibraryServlet"})
 public class LibraryServlet extends HttpServlet {
-    private ApplicationController theAppController = new ApplicationController();
+    private ApplicationController appController = new ApplicationController();
     private LibraryDAO libraryModel = null;
     private ObjectMapper mapper = null;
 
     public void init() {
         System.out.print("Initializing");
-        theAppController.mapCommand("register", new RegistrationHandler());
-        theAppController.mapCommand( "login", new LoginHandler());
-        theAppController.mapCommand("logout", new LogoutHandler());
-        theAppController.mapCommand("authors", new AuthorsHandler());
-        theAppController.mapCommand("genres", new GenresHandler());
-        theAppController.mapCommand("books", new BooksHandler());
-        theAppController.mapCommand("bookAuthor", new BookAuthorHandler());
-        theAppController.mapCommand("bookGenre", new BookGenreHandler());
-        theAppController.mapCommand("book", new AddBookHandler());
-        theAppController.mapCommand("review", new AddReviewHandler());
-        theAppController.mapCommand("editReview", new EditReviewHandler());
-        theAppController.mapCommand("delete", new DeleteReviewHandler());
-        theAppController.mapCommand("userReviews", new UserReviewsHandler());
+        appController.mapCommand("register", new RegistrationHandler());
+        appController.mapCommand( "login", new LoginHandler());
+        appController.mapCommand("logout", new LogoutHandler());
+        appController.mapCommand("authors", new AuthorsHandler());
+        appController.mapCommand("genres", new GenresHandler());
+        appController.mapCommand("books", new BooksHandler());
+        appController.mapCommand("bookAuthor", new BookAuthorHandler());
+        appController.mapCommand("bookGenre", new BookGenreHandler());
+        appController.mapCommand("book", new AddBookHandler());
+        appController.mapCommand("review", new AddReviewHandler());
+        appController.mapCommand("editReview", new EditReviewHandler());
+        appController.mapCommand("delete", new DeleteReviewHandler());
+        appController.mapCommand("userReviews", new UserReviewsHandler());
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
@@ -46,15 +45,14 @@ public class LibraryServlet extends HttpServlet {
             mapper.registerModule(new JavaTimeModule());
             mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
 
-
             // get inputStream from request and use mapper to turn into HashMap
             HashMap<String, Object> dataMap = mapper.readValue(request.getInputStream(), HashMap.class);
             PrintWriter out = response.getWriter();
             dataMap.put("toClient", out);
             dataMap.put("mapper", mapper);
             dataMap.put("model", this.libraryModel);
-            String aCommand = (String) dataMap.get("command");
-            theAppController.handleRequest(aCommand, dataMap);
+            String command = (String) dataMap.get("command");
+            appController.handleRequest(command, dataMap);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -81,7 +79,7 @@ public class LibraryServlet extends HttpServlet {
         dataMap.put("id", id);
         dataMap.put("mapper", mapper);
         System.out.print(dataMap);
-        theAppController.handleRequest(command, dataMap);
+        appController.handleRequest(command, dataMap);
         } catch (Exception e) {
             e.printStackTrace();
         }

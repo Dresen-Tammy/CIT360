@@ -2,6 +2,7 @@ package library.model;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Set;
 
@@ -21,7 +22,7 @@ public class Book {
     private String description;
 
     @Column(name = "date_added")
-    private Date date_added;
+    private LocalDate date_added;
 
     /*
     * A book has one author, but an author can have many books.
@@ -47,6 +48,16 @@ public class Book {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "book", fetch = FetchType.EAGER)
     private Set<Review> reviews;
 
+    public Book() {
+        this.date_added = LocalDate.now();
+    }
+    public Book(String title, String description, Author author, Genre genre) {
+        this.title = title;
+        this.description = description;
+        this.date_added = LocalDate.now();
+        this.author = author;
+        this.genre = genre;
+    }
 
     public Integer getId() {
         return id;
@@ -72,11 +83,11 @@ public class Book {
         this.description = description;
     }
 
-    public Date getDate_added() {
+    public LocalDate getDate_added() {
         return date_added;
     }
 
-    public void setDate_added(Date date_added) {
+    public void setDate_added(LocalDate date_added) {
         this.date_added = date_added;
     }
 

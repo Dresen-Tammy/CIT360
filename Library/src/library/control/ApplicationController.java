@@ -1,4 +1,4 @@
-package main.control;
+package library.control;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -9,7 +9,7 @@ public class ApplicationController {
     public void handleRequest(String command, HashMap<String, Object> data) throws IOException {
         Handler aCommandHandler = handlerMap.get(command);
         if(aCommandHandler != null) {
-            aCommandHandler.handleIt(data);
+            aCommandHandler.runHandler(data);
         }
     }
 
