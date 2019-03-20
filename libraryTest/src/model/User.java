@@ -77,7 +77,4 @@ public class User {
         return this.active;
     }
 
-    public Set<Review> getReviews() {
-        return reviews;
-    }
 }

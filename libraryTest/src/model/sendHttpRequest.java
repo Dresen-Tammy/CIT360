@@ -18,20 +18,14 @@ public class sendHttpRequest {
     public static void main(String[] args) throws IOException {
         // create executor
         ExecutorService executor = Executors.newFixedThreadPool(3);
-        // create user
-        User tammy = new User();
-        tammy.setUname("tammy");
-        tammy.setPword("password");
+        User user;
+
+// ********** create user *************
         // create hashmap with login data
         HashMap<String, Object> loginData = new HashMap<>();
-        loginData.put("command", "login");
-        loginData.put("uname", tammy.getUname());
-        loginData.put("pword", tammy.getPword());
-        String loginJson = "";
-
-
-        // send url call with future
-
+        loginData.put("command", "register");
+        loginData.put("uname", "peggy");
+        loginData.put("pword", "password");
         Future<HashMap> jsonResponse = executor.submit(new URLCallable(loginData));
 
         // get response from future
@@ -44,15 +38,15 @@ public class sendHttpRequest {
             e.printStackTrace();
         }
         System.out.println(response);
-        tammy.setSession((String) response.get("id"));
+        user = (User) response.get("user");
 
         // get books
         HashMap<String, Object> getBooks = new HashMap<>();
         getBooks.put("command", "books");
 
-        Future<HashMap> getBooksResponse = executor.submit(new URLCallable(getBooks));
+        //Future<HashMap> getBooksResponse = executor.submit(new URLCallable(getBooks));
 
-        HashMap bookResponse = null;
+        /*HashMap bookResponse = null;
         try {
             bookResponse = getBooksResponse.get();
         } catch (InterruptedException e) {
@@ -72,7 +66,7 @@ public class sendHttpRequest {
             System.out.println(book);
         }
 
-
+ */
         executor.shutdown();
 
     }

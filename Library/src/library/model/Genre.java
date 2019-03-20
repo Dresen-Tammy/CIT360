@@ -23,9 +23,9 @@ public class Genre {
     /*
     * One genre can have many books.
      */
-    @JsonIgnore
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "genre", fetch = FetchType.EAGER)
-    private Set<Book> books;
+//    @JsonIgnore
+//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "genre", fetch = FetchType.EAGER)
+//    private Set<Book> books;
 
     public Genre() {
     }

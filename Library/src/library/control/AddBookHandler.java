@@ -1,17 +1,19 @@
 package library.control;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sun.deploy.net.HttpResponse;
 import library.model.Book;
 import library.model.LibraryDAO;
 import library.model.User;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.HashMap;
 
-public class AddBookHandler implements Handler {
-    @Override
+public class AddBookHandler implements PostHandler {
+
     public void runHandler(HashMap<String, Object> data) throws IOException {
         // uuid from data
         String sessionId = (String) data.get("id");
@@ -44,5 +46,11 @@ public class AddBookHandler implements Handler {
         // use mapper to put responseMap into out.
         mapper.writeValue(out, responseMap);
     }
+
+    @Override
+    public void runHandler(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        LibraryDAO model = LibraryDAO.getInstance();
+    }
+
 }
 

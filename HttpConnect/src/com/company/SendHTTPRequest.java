@@ -30,7 +30,6 @@ public class SendHTTPRequest {
             System.out.println(e);
         }
     }
-
     public static Runnable callMe(String searchQuery) {
         int responseCode = 0;
         try {

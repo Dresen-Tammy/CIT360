@@ -94,6 +94,28 @@ public class LibraryDAO {
         }
     }
 
+    // get one user by name and password. Used for logging in, returns user.
+    public User getUser(String aName) {
+        session = factory.openSession();
+        Transaction tx = null;
+        try {
+            tx = session.beginTransaction();
+            String sql = "from library.model.User where uname=(:name)";
+            Query query = session.createQuery(sql).setParameter("name", aName);
+            System.out.println(query);
+            User theUser = (User) query.uniqueResult();
+
+            tx.commit();
+            session.close();
+            return theUser;
+        } catch (Exception e) {
+            e.printStackTrace();
+            if (tx != null) {tx.rollback();}
+            session.close();
+            return null;
+        }
+    }
+
 
     // get one user by sessionID. Once logged in, used to maintain session.
     public User getUserBySessionID(String aSessionID) {

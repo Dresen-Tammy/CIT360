@@ -12,7 +12,8 @@
 </head>
 <body>
 <h1>Register</h1>
-<form action="/LibraryServlet" method="post">
+<h3>${message}</h3>
+<form action="LibraryServlet" method="post">
     <label for="user">User Name</label>
     <input type="text" id="user" name="user" value="${name}">
     <label for="password">Password</label>

@@ -1,5 +1,6 @@
 package model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Review {
@@ -10,10 +11,14 @@ public class Review {
 
     private String review;
 
-    private Date date_added;
+    private LocalDate date_added;
     private User user;
 
     private Book book;
+
+    public Review() {
+        this.date_added = LocalDate.now();
+    }
 
     public Integer getId() { return id;}
 
@@ -37,11 +42,11 @@ public class Review {
         this.review = review;
     }
 
-    public Date getDate_added() {
+    public LocalDate getDate_added() {
         return date_added;
     }
 
-    public void setDate_added(Date date_added) {
+    public void setDate_added(LocalDate date_added) {
         this.date_added = date_added;
     }
 

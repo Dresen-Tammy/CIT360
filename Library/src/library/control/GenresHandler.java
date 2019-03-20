@@ -1,17 +1,14 @@
 package library.control;
 
-import com.fasterxml.jackson.core.JsonGenerationException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sun.deploy.net.HttpResponse;
 import library.model.LibraryDAO;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class GenresHandler implements Handler {
-    @Override
+/*@Override
     public void runHandler(HashMap<String, Object> data) throws IOException {
 // get info out of dataMap
         LibraryDAO theModel = (LibraryDAO) data.get("model");
@@ -23,5 +20,10 @@ public class GenresHandler implements Handler {
         ObjectMapper mapper = (ObjectMapper) data.get("mapper");
         PrintWriter out = (PrintWriter) data.get("toClient");
         mapper.writeValue(out, responseMap);
+    }*/
+
+    @Override
+    public void runHandler(HttpServletRequest request, HttpServletResponse response) {
+
     }
 }

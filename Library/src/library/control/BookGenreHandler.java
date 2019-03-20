@@ -1,11 +1,12 @@
 package library.control;
 
-import com.fasterxml.jackson.core.JsonGenerationException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sun.deploy.net.HttpResponse;
 import library.model.Book;
 import library.model.LibraryDAO;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -13,6 +14,9 @@ import java.util.HashMap;
 
 public class BookGenreHandler implements Handler {
     @Override
+    public void runHandler(HttpServletRequest request, HttpServletResponse response) {
+
+    }
     public void runHandler(HashMap<String, Object> data) throws IOException {
         // get model
         LibraryDAO model = (LibraryDAO)data.get("model");

@@ -21,8 +21,9 @@ public class Book {
     @Column(name = "description")
     private String description;
 
-    @Column(name = "date_added")
-    private LocalDate date_added;
+    // Date added saved for future iteration.
+    //@Column(name = "date_added")
+    //private LocalDate date_added;
 
     /*
     * A book has one author, but an author can have many books.
@@ -36,27 +37,41 @@ public class Book {
      * A book has one genre, but a genre can have many books.
      * ManyToOne with FetchType.EAGER will fetch books when genre is called.
      */
-
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "genre_id", referencedColumnName = "id")
-    private Genre genre;
+//    Genre table saved for future iteration.
+//    @ManyToOne(fetch = FetchType.EAGER)
+//    @JoinColumn(name = "genre_id", referencedColumnName = "id")
+//    private Genre genre;
 
     /*
     * A book can have many reviews. CascadeType.ALL causes associated
     * reviews to be deleted when a Book is deleted.
      */
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "book", fetch = FetchType.EAGER)
-    private Set<Review> reviews;
+    // Reviews saved for future iteration
+//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "book", fetch = FetchType.EAGER)
+//    private Set<Review> reviews;
 
+    // default constructor
     public Book() {
-        this.date_added = LocalDate.now();
+        //this.date_added = LocalDate.now();
     }
-    public Book(String title, String description, Author author, Genre genre) {
+
+    // constructor with no id
+    public Book(String title, String description, Author author) {
         this.title = title;
         this.description = description;
-        this.date_added = LocalDate.now();
+        //this.date_added = LocalDate.now();
         this.author = author;
-        this.genre = genre;
+        //this.genre = genre;
+    }
+
+    // constructor with id
+
+
+    public Book(Integer id, String title, String description, Author author) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.author = author;
     }
 
     public Integer getId() {
@@ -83,13 +98,13 @@ public class Book {
         this.description = description;
     }
 
-    public LocalDate getDate_added() {
-        return date_added;
-    }
-
-    public void setDate_added(LocalDate date_added) {
-        this.date_added = date_added;
-    }
+//    public LocalDate getDate_added() {
+//        return date_added;
+//    }
+//
+//    public void setDate_added(LocalDate date_added) {
+//        this.date_added = date_added;
+//    }
 
     public Author getAuthor() {
         return author;
@@ -99,21 +114,21 @@ public class Book {
         this.author = author;
     }
 
-    public Genre getGenre() {
-        return genre;
-    }
+//    public Genre getGenre() {
+//        return genre;
+//    }
+//
+//    public void setGenre(Genre genre) {
+//        this.genre = genre;
+//    }
 
-    public void setGenre(Genre genre) {
-        this.genre = genre;
-    }
-
-    public Set<Review> getReviews() {
-        return reviews;
-    }
-
-    public void setReviews(Set<Review> reviews) {
-        this.reviews = reviews;
-    }
+//    public Set<Review> getReviews() {
+//        return reviews;
+//    }
+//
+//    public void setReviews(Set<Review> reviews) {
+//        this.reviews = reviews;
+//    }
 
     @Override
     public String toString() {
@@ -121,10 +136,10 @@ public class Book {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
-                ", date_added=" + date_added +
+                //", date_added=" + date_added +
                 ", author=" + author +
-                ", genre=" + genre +
-                ", reviews=" + reviews +
+                //", genre=" + genre +
+                //", reviews=" + reviews +
                 '}';
     }
 }

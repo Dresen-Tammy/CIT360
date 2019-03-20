@@ -23,9 +23,9 @@ public class User {
     * reviews to be deleted when a user is deleted.
      */
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user", fetch = FetchType.EAGER)
-    private Set<Review> reviews;
 
+//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user", fetch = FetchType.EAGER)
+//    private Set<Review> reviews;
 
     public User() {
         this.session = "";
@@ -73,7 +73,7 @@ public class User {
         this.session = session;
     }
 
-    public Set<Review> getReviews() {
-        return reviews;
-    }
+//    public Set<Review> getReviews() {
+//        return reviews;
+//    }
 }

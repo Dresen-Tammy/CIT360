@@ -2,67 +2,54 @@ package library.control;
 
 import library.model.LibraryDAO;
 import library.model.User;
-import com.fasterxml.jackson.core.JsonGenerationException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.UUID;
 
-public class RegistrationHandler implements Handler {
+public class RegistrationHandler implements PostHandler {
     @Override
-    public void runHandler(HashMap<String, Object> dataMap) throws IOException {
-        // get username and password from dataMap input from user
-        User foundUser;
-        String sessionID = "";
-        String userName = "";
-        String password = "";
-        LibraryDAO theModel = null;
-        UUID sessionUUID = null;
-        HashMap<String, Object> responseMap = new HashMap<>();
+    public void runHandler(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        User foundUser = null;
+        PrintWriter out = null;
+        ObjectMapper mapper = new ObjectMapper();
+        HashMap<String, Object> data = new HashMap<>();
+        LibraryDAO model = LibraryDAO.getInstance();
+        String uname = (String) request.getParameter("username");
+        String pword = (String) request.getParameter("password");
+
         try {
-            userName = (String) dataMap.get("uname");
-            password = (String) dataMap.get("pword");
-            // get the model and check to see if user name and password are already in use
-            theModel = (LibraryDAO) dataMap.get("model");
-            foundUser = theModel.getUser(userName, password);
-            // create new response hashmap and sessionId string
+            foundUser = model.getUser(uname);
+
+
+            if (foundUser == null) {
+                User user = new User();
+                user.setUname(uname);
+                user.setPword(pword);
+                model.addObject(user);
+                data.put("message", "success");
+                user.setPword("");
+                String jsonuser = mapper.writeValueAsString(user);
+                data.put("user", jsonuser);
+            } else {
+                data.put("message", "retry");
+            }
 
 
         } catch (Exception e) {
-            foundUser = null;
+            e.printStackTrace();
+            data.put("message", "error");
+        } finally {
+            out = response.getWriter();
+            mapper.writeValue(out, data);
         }
-        // if no user was found that means username and password are available to register
-        if (foundUser == null) {
-            // create new random session userid
-            sessionUUID = UUID.randomUUID();
-            // create new user and save information in it
-            User aUser = new User();
-            aUser.setSession(sessionUUID.toString());
-            aUser.setUname(userName);
-            aUser.setPword(password);
-            // add new user to the model
-            try {
-                theModel.addObject(aUser);
-            } catch (Exception e) {
-                e.printStackTrace();
-                }
-            // and put the new session Id in the response
-            responseMap.put("info", "user");
-            responseMap.put("response", aUser);
-        }
-
-        // if user was found, then put empty sessionId to let user know username not available for registration
-        responseMap.put("info", "error");
-        responseMap.put("response", "Error creating user");
-        // create object mapper
-        ObjectMapper mapper = (ObjectMapper) dataMap.get("mapper");
-            // turn responseMap to JsonString and put it in dataMap to send back to client.
-
-            PrintWriter out = (PrintWriter) dataMap.get("toClient");
-            mapper.writeValue(out, responseMap);
 
     }
+
+
+
 }

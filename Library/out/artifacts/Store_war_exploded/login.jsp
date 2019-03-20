@@ -11,12 +11,13 @@
 </head>
 <body>
 <h1>Login</h1>
+<h3>${message}</h3>
 <form action="/LibraryServlet" method="post">
     <label for="user">User Name</label>
-    <input type="text" id="user" name="user" value="@{name}">
+    <input type="text" id="user" name="user" value="${name}">
     <label for="password">Password</label>
     <input type="password" id="password" name="password">
-    <input type="hidden" value="login">
+    <input type="hidden" name="command" value="login">
     <input type="submit" name="login" value="Login">
 </form>
 </body>

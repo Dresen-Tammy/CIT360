@@ -1189,196 +1189,169 @@ lastName</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="282" name="date_added">
-      <Position>6</Position>
-      <DataType>timestamp|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="299" parent="282" name="book_id_uindex">
+    <index id="298" parent="282" name="book_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="300" parent="282" name="book_title_author_id_index">
+    <index id="299" parent="282" name="book_title_author_id_index">
       <ColNames>title
 author_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="301" parent="282" name="book_author_id_fk">
+    <index id="300" parent="282" name="book_author_id_fk">
       <ColNames>author_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="302" parent="282" name="book_genre_id_fk">
-      <ColNames>genre_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="303" parent="282" name="PRIMARY">
+    <key id="301" parent="282" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="304" parent="282" name="book_id_uindex">
+    <key id="302" parent="282" name="book_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>book_id_uindex</UnderlyingIndexName>
     </key>
-    <foreign-key id="305" parent="282" name="book_author_id_fk">
+    <foreign-key id="303" parent="282" name="book_author_id_fk">
       <ColNames>author_id</ColNames>
       <RefSchemaName>lib</RefSchemaName>
       <RefTableName>author</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="306" parent="282" name="book_genre_id_fk">
-      <ColNames>genre_id</ColNames>
-      <RefSchemaName>lib</RefSchemaName>
-      <RefTableName>genre</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="307" parent="283" name="id">
+    <column id="304" parent="283" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="283" name="name">
+    <column id="305" parent="283" name="name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="283" name="description">
+    <column id="306" parent="283" name="description">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="310" parent="283" name="genre_id_uindex">
+    <index id="307" parent="283" name="genre_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="311" parent="283" name="genre_name_uindex">
+    <index id="308" parent="283" name="genre_name_uindex">
       <ColNames>name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="312" parent="283" name="PRIMARY">
+    <key id="309" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="313" parent="283" name="genre_id_uindex">
+    <key id="310" parent="283" name="genre_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>genre_id_uindex</UnderlyingIndexName>
     </key>
-    <key id="314" parent="283" name="genre_name_uindex">
+    <key id="311" parent="283" name="genre_name_uindex">
       <ColNames>name</ColNames>
       <UnderlyingIndexName>genre_name_uindex</UnderlyingIndexName>
     </key>
-    <column id="315" parent="284" name="id">
+    <column id="312" parent="284" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="316" parent="284" name="user_id">
+    <column id="313" parent="284" name="user_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="317" parent="284" name="book_id">
+    <column id="314" parent="284" name="book_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="318" parent="284" name="stars">
+    <column id="315" parent="284" name="stars">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="319" parent="284" name="date_added">
+    <column id="316" parent="284" name="date_added">
       <Position>5</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="320" parent="284" name="review">
+    <column id="317" parent="284" name="review">
       <Position>6</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="321" parent="284" name="review_book_id_user_id_uindex">
+    <index id="318" parent="284" name="review_book_id_user_id_uindex">
       <ColNames>book_id
 user_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="322" parent="284" name="review_user_id_fk">
+    <index id="319" parent="284" name="review_user_id_fk">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="323" parent="284" name="PRIMARY">
+    <key id="320" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="324" parent="284" name="review_book_id_user_id_uindex">
+    <key id="321" parent="284" name="review_book_id_user_id_uindex">
       <ColNames>book_id
 user_id</ColNames>
       <UnderlyingIndexName>review_book_id_user_id_uindex</UnderlyingIndexName>
     </key>
-    <foreign-key id="325" parent="284" name="review_user_id_fk">
-      <ColNames>user_id</ColNames>
-      <RefSchemaName>lib</RefSchemaName>
-      <RefTableName>user</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="326" parent="284" name="review_book_id_fk">
-      <ColNames>book_id</ColNames>
-      <RefSchemaName>lib</RefSchemaName>
-      <RefTableName>book</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="327" parent="285" name="id">
+    <column id="322" parent="285" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="328" parent="285" name="uname">
+    <column id="323" parent="285" name="uname">
       <Position>2</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="329" parent="285" name="pword">
+    <column id="324" parent="285" name="pword">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="330" parent="285" name="session">
+    <column id="325" parent="285" name="session">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="331" parent="285" name="user_uname_uindex">
+    <index id="326" parent="285" name="user_uname_uindex">
       <ColNames>uname</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="332" parent="285" name="PRIMARY">
+    <key id="327" parent="285" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="333" parent="285" name="user_uname_uindex">
+    <key id="328" parent="285" name="user_uname_uindex">
       <ColNames>uname</ColNames>
       <UnderlyingIndexName>user_uname_uindex</UnderlyingIndexName>
     </key>

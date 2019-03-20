@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -23,22 +24,22 @@ public class Review {
     private String review;
 
     @Column(name = "date_added")
-    private Date date_added;
+    private LocalDate date_added;
     /*
     * Each review has one user, but User can have many reviews.
      */
-    @JsonIgnore
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
-    private User user;
+//    @JsonIgnore
+//    @ManyToOne(fetch = FetchType.EAGER)
+//    @JoinColumn(name = "user_id", referencedColumnName = "id")
+//    private User user;
 
     /*
     * Each Review has one book, but Book can have many reviews.
      */
-    @JsonIgnore
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "book_id", referencedColumnName = "id")
-    private Book book;
+//    @JsonIgnore
+//    @ManyToOne(fetch = FetchType.EAGER)
+//    @JoinColumn(name = "book_id", referencedColumnName = "id")
+//    private Book book;
 
     public Integer getId() { return id;}
 
@@ -62,29 +63,29 @@ public class Review {
         this.review = review;
     }
 
-    public Date getDate_added() {
+    public LocalDate getDate_added() {
         return date_added;
     }
 
-    public void setDate_added(Date date_added) {
+    public void setDate_added(LocalDate date_added) {
         this.date_added = date_added;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public Book getBook() {
-        return book;
-    }
-
-    public void setBook(Book book) {
-        this.book = book;
-    }
+//    public User getUser() {
+//        return user;
+//    }
+//
+//    public void setUser(User user) {
+//        this.user = user;
+//    }
+//
+//    public Book getBook() {
+//        return book;
+//    }
+//
+//    public void setBook(Book book) {
+//        this.book = book;
+//    }
 
     @Override
     public String toString() {

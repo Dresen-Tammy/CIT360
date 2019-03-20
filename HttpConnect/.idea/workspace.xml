@@ -2,26 +2,111 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1b59e7a-907a-4465-9b61-5c9eb6197b7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../MyServletProject/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyServletProject/src/Servlets/DoubleMeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleHttpGetServlet/app/src/main/java/com/theopentutorials/android/HttpGetServletActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../httpgetservlet/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../httpgetservlet/src/com/theopentutorials/servlets/HelloWorldServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testAndroid/app/src/main/java/com/example/dresen_hp/testandroid/HttpGetServletActivity3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Library/.idea/artifacts/Store_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Library/web/library.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/.idea/artifacts/springLibrary_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/.idea/libraries/Hibernate_5_4_1_5_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/.idea/libraries/Spring_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/springLibrary.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/src/server/control/LibraryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/src/server/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springLibrary/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HttpConnect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HttpConnect.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HttpConnect/com/company/SendHTTPRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HttpConnect/com/company/SendHTTPRequest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/SendHTTPRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/SendHTTPRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JunitTest/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JunitTest/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/.idea/artifacts/ServletExample_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JacksonExample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JacksonExample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JacksonExample/target/classes/com/dresen/jacksonexample/JSONJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JacksonExample/target/classes/com/dresen/jacksonexample/JSONJava.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JacksonExample/target/classes/com/dresen/jacksonexample/JSONJava2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JacksonExample/target/classes/com/dresen/jacksonexample/JSONJava2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/.idea/dataSources/a9aa1972-476d-419a-9894-f994dd38e356.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/.idea/dataSources/a9aa1972-476d-419a-9894-f994dd38e356.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/Library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/Library.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/AddBookHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/AddBookHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/AddReviewHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/AddReviewHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/ApplicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/ApplicationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/AuthorsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/AuthorsHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/BookAuthorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/BookAuthorHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/BookGenreHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/BookGenreHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/BooksHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/BooksHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/DeleteReviewHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/DeleteReviewHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/EditReviewHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/EditReviewHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/GenresHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/GenresHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/Handler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/LibraryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/LibraryServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/LoginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/LoginHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/LogoutHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/LogoutHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/RegistrationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/RegistrationHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/UserReviewsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/control/UserReviewsHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/model/Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/model/Genre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/model/LibraryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/model/LibraryDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/model/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/model/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/WEB-INF/classes/library/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/artifacts/Store_war_exploded/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/AddBookHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/AddBookHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/AddReviewHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/AddReviewHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/ApplicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/ApplicationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/AuthorsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/AuthorsHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/BookAuthorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/BookAuthorHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/BookGenreHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/BookGenreHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/BooksHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/BooksHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/DeleteReviewHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/DeleteReviewHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/EditReviewHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/EditReviewHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/GenresHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/GenresHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/Handler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/LibraryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/LibraryServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/LoginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/LoginHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/LogoutHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/LogoutHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/RegistrationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/RegistrationHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/control/UserReviewsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/control/UserReviewsHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/model/Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/model/Genre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/model/LibraryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/model/LibraryDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/model/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/model/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/out/production/Library/library/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/out/production/Library/library/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/AddBookHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/AddBookHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/AddReviewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/AddReviewHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/ApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/AuthorsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/AuthorsHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/BookAuthorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/BookAuthorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/BookGenreHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/BookGenreHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/BooksHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/BooksHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/DeleteReviewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/DeleteReviewHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/EditReviewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/EditReviewHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/GenresHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/GenresHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/LibraryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/LibraryServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/LoginHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/LogoutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/LogoutHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/RegistrationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/RegistrationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/UserReviewsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/UserReviewsHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/model/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/model/Genre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/model/LibraryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/model/LibraryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/model/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/web/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServletExample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/ServletExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/ServletExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/out/artifacts/ServletExample_war_exploded/WEB-INF/classes/servlets/MadlibServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/out/artifacts/ServletExample_war_exploded/WEB-INF/classes/servlets/MadlibServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/out/artifacts/ServletExample_war_exploded/user_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/out/artifacts/ServletExample_war_exploded/user_input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/out/production/ServletExample/servlets/MadlibServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/out/production/ServletExample/servlets/MadlibServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/src/servlets/MadlibServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/src/servlets/MadlibServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/web/user_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/web/user_input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../System Level Test - Sheet1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/out/artifacts/Store_war_exploded/WEB-INF/classes/store/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/out/artifacts/Store_war_exploded/WEB-INF/classes/store/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/out/artifacts/Store_war_exploded/WEB-INF/classes/store/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/out/artifacts/Store_war_exploded/WEB-INF/classes/store/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/out/production/Store/store/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/out/production/Store/store/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/out/production/Store/store/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/out/production/Store/store/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/src/store/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/src/store/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libraryTest/src/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../libraryTest/src/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libraryTest/src/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/../libraryTest/src/model/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libraryTest/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../libraryTest/src/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libraryTest/src/model/sendHttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../libraryTest/src/model/sendHttpRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libraryTest/web/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../libraryTest/web/WEB-INF/login.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +120,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/SendHTTPRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="549">
+              <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,7 +132,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Rebeccas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
+            <state relative-caret-position="836">
               <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -59,7 +144,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Response.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="304">
               <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
               <folding>
                 <element signature="e#362#363#0" expanded="true" />
@@ -77,7 +162,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Recipe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
+            <state relative-caret-position="1159">
               <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
             </state>
           </provider>
@@ -119,11 +204,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2219" />
-    <option name="y" value="-324" />
-    <option name="width" value="806" />
-    <option name="height" value="605" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -134,8 +218,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,17 +350,18 @@
       <workItem from="1550257022070" duration="6792000" />
       <workItem from="1551402613593" duration="595000" />
       <workItem from="1551458553657" duration="2154000" />
+      <workItem from="1552346425901" duration="3908000" />
+      <workItem from="1553002499075" duration="594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29410000" />
+    <option name="totallyTimeSpent" value="33912000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2219" y="-324" width="806" height="605" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20811519" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13408723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -317,13 +402,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/SendHTTPRequest.java</url>
-          <line>56</line>
+          <line>55</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/SendHTTPRequest.java</url>
-          <line>47</line>
+          <line>46</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -335,7 +420,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/SendHTTPRequest.java</url>
-          <line>90</line>
+          <line>89</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
@@ -345,6 +430,12 @@
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/SendHTTPRequest.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -353,8 +444,8 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/Andreas.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/SendHTTPRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="549">
+          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -363,7 +454,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Rebeccas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
+        <state relative-caret-position="836">
           <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -373,7 +464,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Response.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="304">
           <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
             <element signature="e#362#363#0" expanded="true" />
@@ -389,7 +480,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Recipe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
+        <state relative-caret-position="1159">
           <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
         </state>
       </provider>

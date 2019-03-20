@@ -2,62 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c339421f-ba9e-4809-ae8c-09ff03a42950" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/androidTest/java/com/dresent/madlibclient/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/java/com/dresent/madlibclient/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/app/src/test/java/com/dresent/madlibclient/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MadlibClient/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyServletProject/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyServletProject/src/Servlets/DoubleMeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SimpleHttpGetServlet/app/src/main/java/com/theopentutorials/android/HttpGetServletActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../httpgetservlet/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../httpgetservlet/src/com/theopentutorials/servlets/HelloWorldServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testAndroid/app/src/main/java/com/example/dresen_hp/testandroid/HttpGetServletActivity3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Library/src/library/control/AddBookHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Library/src/library/control/AddReviewHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Library/src/library/control/DeleteReviewHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Library/src/library/control/EditReviewHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Library/src/library/control/UserReviewsHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libraryTest/src/model/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libraryTest/src/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libraryTest/src/model/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libraryTest/src/model/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libraryTest/src/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libraryTest/src/model/sendHttpRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HibernateLibrary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HibernateLibrary/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HttpConnect/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HttpConnect/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HttpConnect/HttpConnect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../HttpConnect/HttpConnect.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HttpConnect/out/production/HttpConnect/com/company/SendHTTPRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HttpConnect/out/production/HttpConnect/com/company/SendHTTPRequest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HttpConnect/src/com/company/SendHTTPRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HttpConnect/src/com/company/SendHTTPRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JunitTest/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JunitTest/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/.idea/artifacts/ServletExample_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dresen/jacksonexample/JSONJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dresen/jacksonexample/JSONJava.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dresen/jacksonexample/JSONJava2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dresen/jacksonexample/JSONJava2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/ApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/AuthorsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/AuthorsHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/BookAuthorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/BookAuthorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/BookGenre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/BookGenreHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/BooksHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/BooksHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/GenresHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/GenresHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/LibraryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/LibraryServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/LoginHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/LogoutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/LogoutHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/control/RegistrationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/control/RegistrationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/model/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/model/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/model/Genre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/model/LibraryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/model/LibraryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Library/src/library/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Library/src/library/model/Review.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ServletExample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/ServletExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/ServletExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/out/artifacts/ServletExample_war_exploded/WEB-INF/classes/servlets/MadlibServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/out/artifacts/ServletExample_war_exploded/WEB-INF/classes/servlets/MadlibServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/out/artifacts/ServletExample_war_exploded/user_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/out/artifacts/ServletExample_war_exploded/user_input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/out/production/ServletExample/servlets/MadlibServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/out/production/ServletExample/servlets/MadlibServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/src/servlets/MadlibServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/src/servlets/MadlibServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ServletExample/web/user_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ServletExample/web/user_input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../System Level Test - Sheet1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/out/artifacts/Store_war_exploded/WEB-INF/classes/store/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/out/artifacts/Store_war_exploded/WEB-INF/classes/store/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/out/artifacts/Store_war_exploded/WEB-INF/classes/store/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/out/artifacts/Store_war_exploded/WEB-INF/classes/store/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/out/production/Store/store/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/out/production/Store/store/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/out/production/Store/store/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/out/production/Store/store/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Store/src/store/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Store/src/store/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,7 +56,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dresen/jacksonexample/JacksonExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-597">
+            <state relative-caret-position="19">
               <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -101,10 +86,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2160" />
+    <option name="x" value="1302" />
     <option name="y" value="-1098" />
     <option name="width" value="1680" />
-    <option name="height" value="1417" />
+    <option name="height" value="1413" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -113,44 +98,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="jacksonExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JacksonExample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jacksonExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JacksonExample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jacksonExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JacksonExample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jacksonExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JacksonExample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jacksonExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JacksonExample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jacksonexample" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -220,16 +169,19 @@
       <updated>1550006389958</updated>
       <workItem from="1550006394590" duration="1241000" />
       <workItem from="1551721527542" duration="4564000" />
+      <workItem from="1552367874003" duration="612000" />
+      <workItem from="1552374085526" duration="1000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5805000" />
+    <option name="totallyTimeSpent" value="6418000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2160" y="-1098" width="1680" height="1417" extended-state="0" />
+    <frame x="1302" y="-1098" width="1680" height="1413" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23260073" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23748474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -237,7 +189,6 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3245283" />
@@ -250,6 +201,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -325,7 +277,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dresen/jacksonexample/JacksonExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-597">
+        <state relative-caret-position="19">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />

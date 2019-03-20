@@ -1,16 +1,19 @@
 package library.control;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sun.deploy.net.HttpResponse;
 import library.model.LibraryDAO;
 import library.model.Review;
 import library.model.User;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
 
-public class AddReviewHandler implements Handler {
-    @Override
+public class AddReviewHandler implements PostHandler {
+
     public void runHandler(HashMap<String, Object> data) throws IOException {
         // get model from data
         LibraryDAO model = (LibraryDAO) data.get("model");
@@ -47,5 +50,11 @@ public class AddReviewHandler implements Handler {
         }
         // add responseMap to out with mapper
         mapper.writeValue(out, responseMap);
+    }
+
+    @Override
+    public void runHandler(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        LibraryDAO model = LibraryDAO.getInstance();
+
     }
 }
