@@ -2,6 +2,7 @@ package library.control;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.deploy.net.HttpResponse;
+import library.model.Author;
 import library.model.Book;
 import library.model.LibraryDAO;
 import library.model.User;
@@ -12,44 +13,44 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
 
-public class AddBookHandler implements PostHandler {
+public class AddBookHandler implements Handler {
 
-    public void runHandler(HashMap<String, Object> data) throws IOException {
-        // uuid from data
-        String sessionId = (String) data.get("id");
-        // get model from data
-        LibraryDAO model = (LibraryDAO) data.get("model");
-        ObjectMapper mapper = (ObjectMapper) data.get("mapper");
-        // get out from data
-        PrintWriter out = (PrintWriter) data.get("toClient");
-        // create response map
-        HashMap<String, Object> responseMap = new HashMap<>();
-        Book book = null;
-        // **** get user by uuid
-        User foundUser = model.getUserBySessionID(sessionId);
-        // if foundUser != null
-        if (foundUser != null) {
-            // get book from data and parse with mapper
-            String jsonBook = (String) data.get("book");
-            book = mapper.readValue(jsonBook, Book.class);
-            // **** add book to database
-            model.addObject(book);
-            // put book into responseMap
-            responseMap.put("info", "book");
-            responseMap.put("response", book);
-        } else {
-            // if user not logged in, add error message to responseMap
-            responseMap.put("info", "error");
-            String error = "Please login to add book.";
-            responseMap.put("response", error);
-        }
-        // use mapper to put responseMap into out.
-        mapper.writeValue(out, responseMap);
-    }
+
 
     @Override
     public void runHandler(HttpServletRequest request, HttpServletResponse response) throws IOException {
         LibraryDAO model = LibraryDAO.getInstance();
+        // get parameters from request
+        String title = request.getParameter("title");
+        String description = request.getParameter("description");
+        String authorFirst = request.getParameter("authorFirst");
+        String authorLast = request.getParameter("authorLast");
+        PrintWriter out = response.getWriter();
+        ObjectMapper mapper = new ObjectMapper();
+        Object result = null;
+        // check if book is in db
+        try {
+            result = model.getBooksByTitleAuthor(title, authorLast);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        // if not check if author is in db
+        if (result == null) {
+            Author foundAuthor = model.getAuthor(authorFirst, authorLast);
+            if (foundAuthor == null) {
+                foundAuthor = new Author();
+                foundAuthor.setFirstName(authorFirst);
+                foundAuthor.setLastName(authorLast);
+                model.addAuthor(foundAuthor);
+            }
+            Book newBook = new Book();
+            newBook.setTitle(title);
+            newBook.setDescription(description);
+
+            model.addBook(newBook, foundAuthor);
+            mapper.writeValue(out, newBook);
+        }
+
     }
 
 }

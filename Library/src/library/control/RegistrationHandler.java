@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.UUID;
 
-public class RegistrationHandler implements PostHandler {
+public class RegistrationHandler implements Handler {
     @Override
     public void runHandler(HttpServletRequest request, HttpServletResponse response) throws IOException {
         User foundUser = null;
@@ -30,7 +30,7 @@ public class RegistrationHandler implements PostHandler {
                 User user = new User();
                 user.setUname(uname);
                 user.setPword(pword);
-                model.addObject(user);
+                model.addUser(user);
                 data.put("message", "success");
                 user.setPword("");
                 String jsonuser = mapper.writeValueAsString(user);

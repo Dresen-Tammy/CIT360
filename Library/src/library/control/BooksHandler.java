@@ -25,10 +25,14 @@ public class BooksHandler implements Handler {
         // call getAllBooks method from model
         ArrayList<Book> booksList = model.getAllBooks();
         // serialize
-        PrintWriter out = response.getWriter();
-        String jsonList = mapper.writeValueAsString(booksList);
-        // add to body
-        out.print(jsonList);
+
+
+            PrintWriter out = response.getWriter();
+            String jsonList = mapper.writeValueAsString(booksList);
+            // add to body
+            out.print(jsonList);
+
+
     }
 
 }

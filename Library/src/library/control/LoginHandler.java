@@ -14,7 +14,7 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.UUID;
 
-public class LoginHandler implements PostHandler {
+public class LoginHandler implements Handler {
     @Override
     public void runHandler(HttpServletRequest request, HttpServletResponse response) throws IOException {
         // get parameters from string
@@ -36,33 +36,6 @@ public class LoginHandler implements PostHandler {
         }
         // else return error message
 
-
-    }
-
-
-
-
-    public void runHandler(HashMap<String, Object> dataMap) throws IOException {
-        String userName = (String) dataMap.get("uname");
-        String password = (String) dataMap.get("pword");
-        LibraryDAO model = (LibraryDAO) dataMap.get("model");
-
-        User foundUser = model.getUser(userName, password);
-        HashMap<String, Object> responseMap = new HashMap<>();
-
-        String sessionId = "";
-        if (foundUser != null) {
-            UUID sessionUUID = UUID.randomUUID();
-            sessionId = sessionUUID.toString();
-            foundUser.setSession(sessionId);
-            model.updateUser(foundUser);
-            responseMap.put("info", sessionId);
-        }
-        responseMap.put("response", sessionId);
-        responseMap.put("info","id");
-        ObjectMapper mapper = (ObjectMapper) dataMap.get("mapper");
-        PrintWriter out = (PrintWriter) dataMap.get("toClient");
-        mapper.writeValue(out, responseMap);
 
     }
 }

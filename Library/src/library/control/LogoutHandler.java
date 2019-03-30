@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
 
-public class LogoutHandler implements PostHandler {
+public class LogoutHandler implements Handler {
 
     @Override
     public void runHandler(HttpServletRequest request, HttpServletResponse response) {
@@ -37,20 +37,5 @@ public class LogoutHandler implements PostHandler {
 
 
     }
-    public void runHandler(HashMap<String, Object> data) throws IOException {
-        String sessionID = (String)data.get("id");
-        LibraryDAO model = LibraryDAO.getInstance();
-        User foundUser = model.getUserBySessionID(sessionID);
-        HashMap<String,Object> responseMap = new HashMap<>();
-        if(foundUser != null) {
-            foundUser.setSession("");
-            model.updateUser(foundUser);
-        }
 
-        responseMap.put("info", "id");
-        responseMap.put("response", "");
-        ObjectMapper mapper = (ObjectMapper)data.get("mapper");
-        PrintWriter out = (PrintWriter) data.get("toClient");
-            mapper.writeValue(out, responseMap);
-    }
 }

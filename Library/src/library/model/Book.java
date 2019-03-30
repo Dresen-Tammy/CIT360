@@ -1,5 +1,7 @@
 package library.model;
 
+import net.bytebuddy.dynamic.loading.InjectionClassLoader;
+
 import javax.persistence.*;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -11,7 +13,7 @@ import java.util.Set;
 public class Book {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Integer id;
 
@@ -33,38 +35,20 @@ public class Book {
     @JoinColumn(name = "author_id", referencedColumnName = "id")
     private Author author;
 
-    /*
-     * A book has one genre, but a genre can have many books.
-     * ManyToOne with FetchType.EAGER will fetch books when genre is called.
-     */
-//    Genre table saved for future iteration.
-//    @ManyToOne(fetch = FetchType.EAGER)
-//    @JoinColumn(name = "genre_id", referencedColumnName = "id")
-//    private Genre genre;
-
-    /*
-    * A book can have many reviews. CascadeType.ALL causes associated
-    * reviews to be deleted when a Book is deleted.
-     */
-    // Reviews saved for future iteration
-//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "book", fetch = FetchType.EAGER)
-//    private Set<Review> reviews;
-
-    // default constructor
     public Book() {
-        //this.date_added = LocalDate.now();
+
     }
 
-    // constructor with no id
+    public Book(String title, String description) {
+        this.title = title;
+        this.description = description;
+    }
+
     public Book(String title, String description, Author author) {
         this.title = title;
         this.description = description;
-        //this.date_added = LocalDate.now();
         this.author = author;
-        //this.genre = genre;
     }
-
-    // constructor with id
 
 
     public Book(Integer id, String title, String description, Author author) {

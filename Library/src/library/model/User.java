@@ -15,8 +15,7 @@ public class User {
     private String uname;
     @Column(name = "pword")
     private String pword;
-    @Column(name = "session")
-    private String session;
+
 
     /*
     * One user can have many reviews.  CascadeType.All causes associated
@@ -28,13 +27,12 @@ public class User {
 //    private Set<Review> reviews;
 
     public User() {
-        this.session = "";
+
     }
 
     public User(String uname, String pword) {
         this.uname = uname;
         this.pword = pword;
-        this.session = "";
     }
 
     @Override
@@ -43,7 +41,6 @@ public class User {
                 "id=" + id +
                 ", uname='" + uname + '\'' +
                 ", pword='" + pword + '\'' +
-                ", session='" + session + '\'' +
                 '}';
     }
 
@@ -65,15 +62,5 @@ public class User {
     public void setPword(String pword) {
         this.pword = pword;
     }
-    public String getSession() {
-        return session;
-    }
 
-    public void setSession(String session) {
-        this.session = session;
-    }
-
-//    public Set<Review> getReviews() {
-//        return reviews;
-//    }
 }

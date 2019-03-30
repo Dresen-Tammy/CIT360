@@ -13,7 +13,7 @@ import java.util.List;
 public class LibraryDAO {
     // class instance variables
     SessionFactory factory = null;
-    Session session = null;
+
 
     private static LibraryDAO single_instance = null;
 
@@ -34,115 +34,179 @@ public class LibraryDAO {
 
 
     /*
-    * Create
+     * Create
      */
     // add object. This works for User, Book and Review
     public void addObject(Object anObject) {
-        session = factory.openSession();
+        Session session = factory.openSession();
         Transaction tx = null;
 
         try {
             tx = session.beginTransaction();
             session.save(anObject);
             tx.commit();
+
         } catch (HibernateException e) {
-            if (tx != null) {tx.rollback();}
+            if (tx != null) {
+                tx.rollback();
+            }
             e.printStackTrace();
         } finally {
             session.close();
         }
     }
 
+    // add object. This works for User, Book and Review
+//    public void addBook(Book aBook) {
+//        if (aBook != null && aBook.getAuthor() != null && aBook.getDescription() != null &&
+//                aBook.getTitle() != null) {
+//
+//            addObject(aBook);
+//        }
+//    }
+
+    public void addBook(Book aBook, Author anAuthor) {
+        if (aBook != null && aBook.getTitle() != null && aBook.getDescription() != null
+                && anAuthor != null && anAuthor.getFirstName() != null && anAuthor.getLastName() != null) {
+            Session session = factory.openSession();
+            Transaction tx = null;
+
+            try {
+                tx = session.beginTransaction();
+                session.save(anAuthor);
+                aBook.setAuthor(anAuthor);
+                session.save(aBook);
+                tx.commit();
+
+            } catch (HibernateException e) {
+                if (tx != null) {
+                    tx.rollback();
+                }
+                e.printStackTrace();
+            } finally {
+                session.close();
+            }
+        }
+    }
+
+    public void addAuthor(Author anAuthor) {
+        if (anAuthor != null && anAuthor.getFirstName() != null && anAuthor.getLastName() != null) {
+            addObject(anAuthor);
+        }
+    }
+
+    public void addUser(User aUser) {
+        if (aUser != null && aUser.getUname() != null && aUser.getPword() != null) {
+            addObject(aUser);
+        }
+    }
+
+    public void deleteObject(Object anObject) {
+        if (anObject != null) {
+            Session session = factory.openSession();
+            Transaction tx = null;
+
+            try {
+                tx = session.beginTransaction();
+                session.delete(anObject);
+                tx.commit();
+            } catch (HibernateException e) {
+                if (tx != null) {
+                    tx.rollback();
+                }
+                e.printStackTrace();
+            } finally {
+                session.close();
+            }
+        }
+    }
 
 
     // update user. Used for setting new sessionId logging in new session
-    public void updateUser(User aUser) {
-        session = factory.openSession();
-        Transaction tx = null;
-        try {
-            tx = session.beginTransaction();
-            session.merge(aUser);
-            tx.commit();
-        } catch (HibernateException e) {
-            if (tx != null) {tx.rollback();}
-            e.printStackTrace();
-        } finally {
-            session.close();
+    public User updateUser(User aUser) {
+        if (aUser != null && aUser.getPword() != null && aUser.getUname() != null) {
+            Session session = factory.openSession();
+            Transaction tx = null;
+            try {
+                tx = session.beginTransaction();
+                session.merge(aUser);
+                tx.commit();
+                return aUser;
+            } catch (HibernateException e) {
+                if (tx != null) {
+                    tx.rollback();
+                }
+                e.printStackTrace();
+                return null;
+            } finally {
+                session.close();
+            }
+        } else {
+            return null;
         }
     }
 
 
     // get one user by name and password. Used for logging in, returns user.
     public User getUser(String aName, String aPassword) {
-        session = factory.openSession();
-        Transaction tx = null;
-        try {
-            tx = session.beginTransaction();
-            String sql = "from library.model.User where uname=(:name) and pword=(:pass)";
-            Query query = session.createQuery(sql).setParameter("name", aName).setParameter("pass", aPassword);
-            System.out.println(query);
-            User theUser = (User) query.uniqueResult();
+        if (aName != null && aPassword != null) {
+            Session session = factory.openSession();
+            Transaction tx = null;
+            try {
+                tx = session.beginTransaction();
+                String sql = "from library.model.User where uname=(:name) and pword=(:pass)";
+                Query query = session.createQuery(sql).setParameter("name", aName).setParameter("pass", aPassword);
+                System.out.println(query);
+                User theUser = (User) query.uniqueResult();
 
-            tx.commit();
-            session.close();
-            return theUser;
-        } catch (Exception e) {
-            e.printStackTrace();
-            if (tx != null) {tx.rollback();}
-            session.close();
+                tx.commit();
+                session.close();
+                return theUser;
+            } catch (Exception e) {
+                e.printStackTrace();
+                if (tx != null) {
+                    tx.rollback();
+                }
+                session.close();
+                return null;
+            }
+        } else {
             return null;
         }
     }
 
     // get one user by name and password. Used for logging in, returns user.
     public User getUser(String aName) {
-        session = factory.openSession();
-        Transaction tx = null;
-        try {
-            tx = session.beginTransaction();
-            String sql = "from library.model.User where uname=(:name)";
-            Query query = session.createQuery(sql).setParameter("name", aName);
-            System.out.println(query);
-            User theUser = (User) query.uniqueResult();
+        if (aName != null) {
+            Session session = factory.openSession();
+            Transaction tx = null;
+            try {
+                tx = session.beginTransaction();
+                String sql = "from library.model.User where uname=(:name)";
+                Query query = session.createQuery(sql).setParameter("name", aName);
+                System.out.println(query);
+                User theUser = (User) query.uniqueResult();
 
-            tx.commit();
-            session.close();
-            return theUser;
-        } catch (Exception e) {
-            e.printStackTrace();
-            if (tx != null) {tx.rollback();}
-            session.close();
+                tx.commit();
+                session.close();
+                return theUser;
+            } catch (Exception e) {
+                e.printStackTrace();
+                if (tx != null) {
+                    tx.rollback();
+                }
+                session.close();
+                return null;
+            }
+        } else {
             return null;
         }
+
     }
-
-
-    // get one user by sessionID. Once logged in, used to maintain session.
-    public User getUserBySessionID(String aSessionID) {
-        session = factory.openSession();
-        Transaction tx = null;
-        try {
-            tx = session.beginTransaction();
-            String sql = "from library.model.User where session=(:session)";
-            Query singleUserQuery = session.createQuery(sql).setParameter("session", aSessionID);
-            User theUser = (User)singleUserQuery.uniqueResult();
-            tx.commit();
-            return theUser;
-        } catch (HibernateException e) {
-        if (tx != null) {tx.rollback();}
-        e.printStackTrace();
-        return null;
-    } finally {
-        session.close();
-    }
-    }
-
-
-
 
 
     public ArrayList getAll(String sql) {
-        session = factory.openSession();
+        Session session = factory.openSession();
         Transaction tx = null;
         try {
             tx = session.beginTransaction();
@@ -151,7 +215,9 @@ public class LibraryDAO {
             tx.commit();
             return new ArrayList(list);
         } catch (HibernateException e) {
-            if (tx != null) {tx.rollback();}
+            if (tx != null) {
+                tx.rollback();
+            }
             e.printStackTrace();
             return null;
         } finally {
@@ -174,12 +240,6 @@ public class LibraryDAO {
      * Query Genre table
      */
 
-    // getAllGenres. Uses getAll to query database.
-    public ArrayList getAllGenres() {
-        String sql = "from library.model.Genre order by name";
-        ArrayList list = getAll(sql);
-        return list;
-    }
 
     /*
      * Query Book table
@@ -192,76 +252,63 @@ public class LibraryDAO {
     }
 
 
-
-    // get books by author
-    public ArrayList getBooksByAuthor(Integer id) {
-        session = factory.openSession();
-        Transaction tx = null;
-        try {
-            Query query = session.createQuery("from library.model.Book where author_id = (:author) order by title");
-            query.setParameter("author", id);
-            List list = query.list();
-            tx.commit();
-            return new ArrayList(list);
-        } catch (HibernateException e) {
-            if (tx != null) {tx.rollback();}
-            e.printStackTrace();
+    // get book by title, author last name
+    public Object getBooksByTitleAuthor(String title, String name) {
+        if (title != null && name != null) {
+            Session session = factory.openSession();
+            Transaction tx = null;
+            try {
+                tx = session.beginTransaction();
+                Query query = session.createQuery("from library.model.Book as b inner join library.model.Author as a on b.author = a.id where b.title = (:title) and a.lastName = (:name)");
+                query.setParameter("title", title);
+                query.setParameter("name", name);
+                Object result = query.uniqueResult();
+                tx.commit();
+                return result;
+            } catch (HibernateException e) {
+                if (tx != null) {
+                    tx.rollback();
+                }
+                e.printStackTrace();
+                return null;
+            } finally {
+                session.close();
+            }
+        } else {
             return null;
-        } finally {
-            session.close();
         }
     }
 
-    // get books by genre
-    public ArrayList getBooksByGenre(Integer id) {
-        session = factory.openSession();
-        Transaction tx = null;
-        try {
-            Query query = session.createQuery("from library.model.Book where genre_id = (:genre) order by title");
-            query.setParameter("genre", id);
-            List list = query.list();
-            tx.commit();
-            return new ArrayList(list);
-        } catch (HibernateException e) {
-            if (tx != null) {tx.rollback();}
-            e.printStackTrace();
-            return null;
-        } finally {
-            session.close();
-        }
-    }
+    public Author getAuthor(String authorFirst, String authorLast) {
+        if (authorFirst != null && authorLast != null) {
+            Session session = factory.openSession();
+            Transaction tx = null;
+            try {
+                tx = session.beginTransaction();
+                Query query = session.createQuery("from Author where lastName= (:authorLast) and firstName = (:authorFirst)");
+                query.setParameter("authorLast", authorLast);
+                query.setParameter("authorFirst", authorFirst);
+                Author author = (Author) query.uniqueResult();
+                tx.commit();
+                return author;
 
-
-    // get book by keyword
-    public ArrayList getBooksByKeyWord(String word) {
-        session = factory.openSession();
-        Transaction tx = null;
-        try {
-            Query query = session.createQuery("from library.model.Book as b inner join library.model.Author as a on b.author = a.id where b.title like (:word) or a.firstName like (:word) or a.lastName like (:word)");
-            query.setParameter("word", word);
-            List list = query.list();
-            tx.commit();
-            return new ArrayList(list);
-        } catch (HibernateException e) {
-            if (tx != null) { tx.rollback(); }
-            e.printStackTrace();
+            } catch (HibernateException e) {
+                if (tx != null) {
+                    tx.rollback();
+                }
+                e.printStackTrace();
+                return null;
+            } finally {
+                session.close();
+            }
+        } else {
             return null;
-        } finally {
-            session.close();
         }
     }
 
     /*
-    * Query review table
+     * Query review table
      */
 
-    /*public ArrayList getReviewsByUser(Integer user_id) {
-        String sql = "from library.model.Review order by date_added where user_id = (:user_id)";
-        session = factory.openSession();
-        Transaction tx = null;
-        try {
-            Query query = session.createQuery()
-        }
 
-    }*/
 }

@@ -24,13 +24,13 @@ public class LibraryServlet extends HttpServlet {
         StringBuffer buffer = null;
         BufferedReader in;
         HashMap<String, Object> info = null;
-        PostApplicationController appPostController = null;
+        ApplicationController appController = null;
 
         try {
             command = (String) request.getParameter("command");
-            appPostController = new PostApplicationController();
-            initializePost(appPostController);
-            appPostController.handleRequest(command, request, response);
+            appController = new ApplicationController();
+            initializePost(appController);
+            appController.handleRequest(command, request, response);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -63,22 +63,15 @@ public class LibraryServlet extends HttpServlet {
     }
 
     // initialize appController
-    public void initializePost(PostApplicationController appController) {
+    public void initializePost(ApplicationController appController) {
         System.out.print("Initializing");
         appController.mapCommand("register", new RegistrationHandler());
         appController.mapCommand("login", new LoginHandler());
         appController.mapCommand("logout", new LogoutHandler());
         appController.mapCommand("book", new AddBookHandler());
-        //appController.mapCommand("review", new AddReviewHandler());
-        //appController.mapCommand("editReview", new EditReviewHandler());
-        //appController.mapCommand("delete", new DeleteReviewHandler());
-
     }
     public void initializeGet(ApplicationController appController) {
         appController.mapCommand("authors", new AuthorsHandler());
         appController.mapCommand("books", new BooksHandler());
-        //appController.mapCommand("bookAuthor", new BookAuthorHandler());
-        //appController.mapCommand("userReviews", new UserReviewsHandler());
-
     }
 }

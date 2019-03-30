@@ -21,6 +21,7 @@
           <element id="file-copy" path="$USER_HOME$/Downloads/javax.servlet.jsp.jstl-api-1.2.1.jar" />
         </element>
       </element>
+      <element id="artifact" artifact-name="Store:war exploded2" />
     </root>
   </artifact>
 </component>
