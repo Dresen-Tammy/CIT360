@@ -66,8 +66,8 @@ public class LibraryDAO {
 //    }
 
     public void addBook(Book aBook, Author anAuthor) {
-        if (aBook != null && aBook.getTitle() != null && aBook.getDescription() != null
-                && anAuthor != null && anAuthor.getFirstName() != null && anAuthor.getLastName() != null) {
+        if (aBook != null && aBook.getTitle() != "" && aBook.getDescription() != "" && aBook.getTitle() != null && aBook.getDescription() != null
+                && anAuthor != null && anAuthor.getFirstName() != "" && anAuthor.getLastName() != "" && anAuthor.getFirstName() != null && anAuthor.getLastName() != null) {
             Session session = factory.openSession();
             Transaction tx = null;
 
@@ -99,13 +99,13 @@ public class LibraryDAO {
     }
 
     public void addAuthor(Author anAuthor) {
-        if (anAuthor != null && anAuthor.getFirstName() != null && anAuthor.getLastName() != null) {
+        if (anAuthor != null && anAuthor.getFirstName() != "" && anAuthor.getLastName() != "" && anAuthor.getFirstName() != null && anAuthor.getLastName() != null) {
             addObject(anAuthor);
         }
     }
 
     public void addUser(User aUser) {
-        if (aUser != null && aUser.getUname() != null && aUser.getPword() != null) {
+        if (aUser != null && aUser.getUname() != "" && aUser.getPword() != "" && aUser.getUname() != null && aUser.getPword() != null) {
             addObject(aUser);
         }
     }
@@ -133,7 +133,7 @@ public class LibraryDAO {
 
     // update user. Used for setting new sessionId logging in new session
     public User updateUser(User aUser) {
-        if (aUser != null && aUser.getPword() != null && aUser.getUname() != null) {
+        if (aUser != null && aUser.getPword() != "" && aUser.getUname() != "" && aUser.getPword() != null && aUser.getUname() != null) {
             Session session = factory.openSession();
             Transaction tx = null;
             try {
@@ -158,7 +158,7 @@ public class LibraryDAO {
 
     // get one user by name and password. Used for logging in, returns user.
     public User getUser(String aName, String aPassword) {
-        if (aName != null && aPassword != null) {
+        if (aName != "" && aPassword != "" && aName != null && aPassword != null) {
             Session session = factory.openSession();
             Transaction tx = null;
             try {
@@ -186,7 +186,7 @@ public class LibraryDAO {
 
     // get one user by name and password. Used for logging in, returns user.
     public User getUser(String aName) {
-        if (aName != null) {
+        if (aName != null && aName != "") {
             Session session = factory.openSession();
             Transaction tx = null;
             try {

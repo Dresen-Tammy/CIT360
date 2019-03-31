@@ -1192,6 +1192,7 @@ lastName</ColNames>
     <column id="298" parent="282" name="description">
       <Position>4</Position>
       <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="299" parent="282" name="book_id_uindex">
