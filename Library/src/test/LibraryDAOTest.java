@@ -1,5 +1,6 @@
 package test;
 
+import com.sun.xml.internal.xsom.impl.scd.Iterators;
 import library.model.Author;
 import library.model.Book;
 import library.model.LibraryDAO;
@@ -62,7 +63,14 @@ public class LibraryDAOTest {
 
                 }
             }
+
         }
+        if (authors != null) {
+            for (Author author : authors) {
+                model.deleteObject(author);
+            }
+        }
+
 
         if (users != null) {
             for (User user : users) {
@@ -129,19 +137,68 @@ public class LibraryDAOTest {
 
     @Test
     public void addAuthor() {
+        model.addAuthor(author1);
+        model.addAuthor(author2);
+        model.addAuthor(authorNoFirst);
+        model.addAuthor(authorNoLast);
+        authors.add(author1);
+        authors.add(author2);
+        authors.add(authorNoFirst);
+        authors.add(authorNoLast);
+        int expected = 2;
+        int actual = 0;
+        for (Author author : authors) {
+            if (author.getId() != null) {
+                actual ++;
+            }
+        }
+        assertThat(actual, is(expected));
     }
 
     @Test
     public void getUser() {
+        model.addUser(user1);
+        users.add(user1);
+        User userFromDb = model.getUser("user1", "pass1");
+        assertNotNull(userFromDb);
     }
 
 
 
     @Test
     public void getAllBooks() {
+        ArrayList<String> addedBooks = new ArrayList<String>();
+        model.addBook(book1, author1);
+        addedBooks.add(book1.getTitle());
+        books.add(book1);
+        authors.add(author1);
+        model.addBook(book2, author2);
+        addedBooks.add(book2.getTitle());
+        books.add(book2);
+        model.addBook(book3,author2);
+        books.add(book3);
+        addedBooks.add(book3.getTitle());
+        authors.add(author2);
+        try {
+            ArrayList<Book> booksFromDb = model.getAllBooks();
+            ArrayList<String> bookTitles = new ArrayList<>();
+            for (Book book : booksFromDb) {
+                bookTitles.add(book.getTitle());
+            }
+            Boolean answer = bookTitles.containsAll(addedBooks);
+            assertTrue(answer);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
     public void getAuthor() {
+        model.addAuthor(author1);
+
+        authors.add(author1);
+
+        Author foundAuthor = model.getAuthor(author1.getFirstName(), author1.getLastName());
+        assertThat(foundAuthor.getFirstName(), is(author1.getFirstName()));
     }
 }

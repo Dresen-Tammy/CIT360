@@ -73,7 +73,16 @@ public class LibraryDAO {
 
             try {
                 tx = session.beginTransaction();
-                session.save(anAuthor);
+                // get author
+                Query query = session.createQuery("from Author where lastName= (:authorLast) and firstName = (:authorFirst)");
+                query.setParameter("authorLast", anAuthor.getLastName());
+                query.setParameter("authorFirst", anAuthor.getFirstName());
+                Author foundAuthor = (Author) query.uniqueResult();
+
+                if (foundAuthor == null){
+                    // author doesn't exist
+                    session.save(anAuthor);
+                }
                 aBook.setAuthor(anAuthor);
                 session.save(aBook);
                 tx.commit();

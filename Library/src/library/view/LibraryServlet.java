@@ -1,7 +1,6 @@
-package library.control;
+package library.view;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import library.model.LibraryDAO;
+import library.control.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,8 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.HashMap;
 
 @WebServlet(name = "LibraryServlet", urlPatterns = {"/LibraryServlet"})
